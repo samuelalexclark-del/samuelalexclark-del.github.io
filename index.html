@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth scroll-pt-24">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snow Leopard Hostel & Trips</title>
-    <meta name="description" content="">
-    <link rel="canonical" href="https://snowleopardhostel.com/" />
+    <title>Contact Us | Snow Leopard Hostel & Trips</title>
+    <meta name="description" content="Get in touch with Snow Leopard Hostel & Trips in Karakol, Kyrgyzstan. Book your room or adventure tour today.">
+    <link rel="canonical" href="https://snowleopardhostel.com/contact/" />
     <link rel="icon" href="/favicon-image.jpg">
     <link rel="apple-touch-icon" href="/favicon-image.jpg">
     <!-- Google Fonts for Adventure & Professional Theme -->
@@ -27,16 +27,6 @@
             }
         }
     </script>
-    <!-- Custom Styles for Carousel Scrollbar Hiding -->
-    <style>
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  /* Firefox */
-        }
-    </style>
     <!-- Lucide Icons for web -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -47,7 +37,7 @@
         <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-24 gap-4 lg:gap-6 xl:gap-8">
                 <a href="https://snowleopardhostel.com/" class="flex items-center gap-3 lg:gap-4 xl:gap-6 cursor-pointer flex-shrink-0">
-                    <img src="logo.jpg" alt="Snow Leopard Hostel Logo" class="h-14 w-14 md:h-16 md:w-16 xl:h-20 xl:w-20 rounded-full object-cover shadow-md border-2 border-orange-600/60" />
+                    <img src="logo.jpg" alt="Snow Leopard Hostel Logo" class="h-14 w-14 md:h-16 md:w-16 xl:h-20 xl:w-20 rounded-full object-cover shadow-md border-2 border-orange-600/60" onerror="this.src='https://images.unsplash.com/photo-1521336575822-6da63fb45455?auto=format&fit=crop&q=80&w=200'" />
                     <span class="font-serif font-bold text-xl md:text-2xl xl:text-3xl tracking-tight text-[#232124] whitespace-nowrap">
                         Snow Leopard <span class="font-sans text-orange-600 text-lg md:text-xl xl:text-2xl">Hostel & Trips</span>
                     </span>
@@ -59,7 +49,7 @@
                     
                     <!-- About Dropdown -->
                     <div class="relative group">
-                        <button type="button" class="text-center text-sm font-medium transition-colors text-[#464348] hover:text-orange-600 py-2 border-b-2 border-transparent group-hover:border-orange-600 flex items-center gap-1 whitespace-nowrap cursor-pointer">
+                        <button type="button" class="cursor-pointer text-center text-sm font-medium transition-colors text-[#464348] hover:text-orange-600 py-2 border-b-2 border-transparent group-hover:border-orange-600 flex items-center gap-1 whitespace-nowrap">
                             About <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"></i>
                         </button>
                         
@@ -74,7 +64,7 @@
                     
                     <!-- Tours Dropdown -->
                     <div class="relative group">
-                        <button type="button" class="text-center text-sm font-medium transition-colors text-[#464348] hover:text-orange-600 py-2 border-b-2 border-transparent group-hover:border-orange-600 flex items-center gap-1 whitespace-nowrap cursor-pointer">
+                        <button type="button" class="cursor-pointer text-center text-sm font-medium transition-colors text-[#464348] hover:text-orange-600 py-2 border-b-2 border-transparent group-hover:border-orange-600 flex items-center gap-1 whitespace-nowrap">
                             Tours & Transfers <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"></i>
                         </button>
                         
@@ -92,7 +82,7 @@
 
                     <a href="https://snowleopardhostel.com/our-rooms/" class="text-center text-sm font-medium transition-colors text-[#464348] hover:text-orange-600 py-2 border-b-2 border-transparent hover:border-orange-600 whitespace-nowrap">Our Rooms</a>
                     <a href="https://snowleopardhostel.com/car-rental/" class="text-center text-sm font-medium transition-colors text-[#464348] hover:text-orange-600 py-2 border-b-2 border-transparent hover:border-orange-600 whitespace-nowrap">Car Rental</a>
-                    <a href="https://snowleopardhostel.com/contact/" class="text-center text-sm font-medium transition-colors text-[#464348] hover:text-orange-600 py-2 border-b-2 border-transparent hover:border-orange-600 whitespace-nowrap">Contact</a>
+                    <a href="https://snowleopardhostel.com/contact/" class="text-center text-sm font-medium transition-colors text-orange-600 py-2 border-b-2 border-orange-600 whitespace-nowrap">Contact</a>
                     <button class="bg-orange-600 hover:bg-orange-500 text-white px-4 xl:px-5 py-2.5 rounded-lg font-bold text-sm transition-colors shadow-lg shadow-orange-600/20 ml-2 whitespace-nowrap">
                         Book Now
                     </button>
@@ -115,9 +105,11 @@
                 
                 <!-- Mobile About Dropdown -->
                 <div class="flex flex-col border-b border-[#aca8aa]/30">
-                    <button id="mobile-about-btn" class="flex justify-center items-center py-2 relative w-full text-[#464348] hover:text-orange-600 focus:outline-none">
+                    <button id="mobile-about-btn" type="button" class="w-full flex justify-center items-center py-2 relative text-[#464348] hover:text-orange-600 focus:outline-none cursor-pointer">
                         <span class="text-center text-lg font-medium">About</span>
-                        <i data-lucide="chevron-down" id="mobile-about-icon" class="absolute right-0 w-5 h-5 transition-transform duration-300"></i>
+                        <div class="absolute right-0 p-2">
+                            <i data-lucide="chevron-down" id="mobile-about-icon" class="w-5 h-5 transition-transform duration-300"></i>
+                        </div>
                     </button>
                     <div id="mobile-about-menu" class="hidden flex-col bg-[#aca8aa]/10 rounded-lg my-2 overflow-hidden">
                         <a href="https://snowleopardhostel.com/about/our-hostel/" class="text-center py-3 text-base font-medium text-[#464348] hover:text-orange-600 border-b border-[#aca8aa]/10">Our Hostel</a>
@@ -127,9 +119,11 @@
                 
                 <!-- Mobile Tours Dropdown -->
                 <div class="flex flex-col border-b border-[#aca8aa]/30">
-                    <button id="mobile-tours-btn" class="flex justify-center items-center py-2 relative w-full text-[#464348] hover:text-orange-600 focus:outline-none">
+                    <button id="mobile-tours-btn" type="button" class="w-full flex justify-center items-center py-2 relative text-[#464348] hover:text-orange-600 focus:outline-none cursor-pointer">
                         <span class="text-center text-lg font-medium">Tours & Transfers</span>
-                        <i data-lucide="chevron-down" id="mobile-tours-icon" class="absolute right-0 w-5 h-5 transition-transform duration-300"></i>
+                        <div class="absolute right-0 p-2">
+                            <i data-lucide="chevron-down" id="mobile-tours-icon" class="w-5 h-5 transition-transform duration-300"></i>
+                        </div>
                     </button>
                     <div id="mobile-tours-menu" class="hidden flex-col bg-[#aca8aa]/10 rounded-lg my-2 overflow-hidden">
                         <a href="https://snowleopardhostel.com/tours-and-transfers/karakol-almaty-transfer/" class="text-center py-3 text-base font-medium text-[#464348] hover:text-orange-600 border-b border-[#aca8aa]/10">Almaty-Karakol Transfer</a>
@@ -142,7 +136,7 @@
 
                 <a href="https://snowleopardhostel.com/our-rooms/" class="text-center text-lg font-medium text-[#464348] hover:text-orange-600 py-2 border-b border-[#aca8aa]/30">Hostel Rooms</a>
                 <a href="https://snowleopardhostel.com/car-rental/" class="text-center text-lg font-medium text-[#464348] hover:text-orange-600 py-2 border-b border-[#aca8aa]/30">Car Rental</a>
-                <a href="https://snowleopardhostel.com/contact/" class="text-center text-lg font-medium text-[#464348] hover:text-orange-600 py-2 border-b border-transparent">Contact</a>
+                <a href="https://snowleopardhostel.com/contact/" class="text-center text-lg font-medium text-orange-600 py-2 border-b border-transparent">Contact</a>
                 <button class="bg-orange-600 hover:bg-orange-500 text-white py-3 rounded-lg font-bold mt-2 transition-colors w-full">Book Now</button>
             </div>
         </div>
@@ -150,438 +144,187 @@
 
     <!-- Main Content Area -->
     <main class="flex-grow">
-        <!-- Hero Section -->
-        <header class="relative h-[80vh] flex items-center justify-center">
+        <!-- Contact Hero Section -->
+        <header class="relative h-[40vh] md:h-[50vh] flex items-center justify-center border-b border-[#464348]/20">
             <div class="absolute inset-0 w-full h-full">
+                <!-- Using a placeholder mountain image to match the vibe -->
                 <img 
-                    src="home-hero-2.jpg" 
-                    alt="People riding horses in the mountains of Kyrgyzstan" 
+                    src="contact-hero.jpg" 
+                    alt="A girl standing in front of Seven Bulls, Kyrgyzstan" 
                     class="w-full h-full object-cover object-center"
                 />
                 <!-- Light grey overlay to wash out the image and make dark text pop -->
                 <div class="absolute inset-0 bg-[#aca8aa]/40"></div>
             </div>
             
-            <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
-                <h1 class="font-serif text-4xl md:text-6xl font-extrabold text-[#232124] mb-6 leading-tight drop-shadow-sm">
-                    Welcome To Snow Leopard <br class="hidden md:block" /> Hostel & Trips
+            <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-10">
+                <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#232124] mb-4 drop-shadow-sm">
+                    Get in Touch
                 </h1>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="#tours" class="bg-orange-600 hover:bg-orange-500 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-lg shadow-orange-600/30 inline-flex items-center justify-center">
-                        Explore Our Trips
-                    </a>
-                    <a href="https://snowleopardhostel.com/our-rooms/" class="bg-white/60 hover:bg-white backdrop-blur-sm border border-[#464348]/30 text-[#464348] px-8 py-4 rounded-lg font-bold text-lg transition-all inline-flex items-center justify-center shadow-sm">
-                        View Our Rooms
-                    </a>
-                </div>
             </div>
         </header>
 
-        <!-- Featured Tours Carousel Section -->
-        <section id="tours" class="py-20 bg-[#aca8aa]/10 relative overflow-hidden">
+        <!-- Contact Form & Info Section -->
+        <section class="py-16 md:py-24 relative">
             <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-end mb-12">
-                    <div class="text-left max-w-2xl">
-                        <h2 class="font-serif text-3xl md:text-4xl font-bold text-[#232124] mb-4">Our Tours & Transfers</h2>
-                        <p class="text-[#464348] text-lg">
-                            View our range of adventure tours and transfers we offer below.
-                        </p>
-                    </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
                     
-                    <!-- Carousel Navigation Buttons (Hidden on very small screens) -->
-                    <div class="hidden sm:flex gap-3">
-                        <button id="prevBtn" class="bg-white border border-[#464348]/20 text-orange-600 p-3 rounded-full hover:bg-orange-600 hover:text-white transition-colors shadow-sm focus:outline-none">
-                            <i data-lucide="chevron-left" class="w-6 h-6"></i>
-                        </button>
-                        <button id="nextBtn" class="bg-white border border-[#464348]/20 text-orange-600 p-3 rounded-full hover:bg-orange-600 hover:text-white transition-colors shadow-sm focus:outline-none">
-                            <i data-lucide="chevron-right" class="w-6 h-6"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Carousel Container -->
-                <div id="toursCarousel" class="flex overflow-x-auto gap-6 pb-8 pt-4 no-scrollbar touch-pan-x cursor-grab active:cursor-grabbing">
-                    
-                    <!-- Trip 1: Almaty-Karakol Transfer -->
-                    <div class="shrink-0 w-[85vw] sm:w-[45vw] lg:w-[30vw] flex flex-col group relative drop-shadow-lg hover:drop-shadow-xl transition-all duration-300">
-                        <!-- Mountain-shaped image wrapper - Shallow Cut -->
-                        <div class="relative h-64 [clip-path:polygon(0_15%,_30%_5%,_40%_10%,_60%_0%,_75%_6%,_100%_12%,_100%_100%,_0_100%)] overflow-hidden z-10">
-                            <img src="karakol-almaty-transfer.jpg" alt="Camping spot on a Karakol to Almaty Transfer" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                        </div>
-                        <!-- Icon floating in the 'sky' (negative space) -->
-                        <div class="absolute top-10 right-6 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md border border-[#464348]/10 text-orange-600 z-20 group-hover:-translate-y-1 transition-transform duration-300">
-                            <i data-lucide="van" class="w-5 h-5"></i>
-                        </div>
-                        <!-- White text card tucked under the clipped image -->
-                        <div class="bg-white p-6 flex flex-col flex-grow pt-5 -mt-1 rounded-b-2xl border-x border-b border-[#464348]/10 group-hover:border-orange-600/40 transition-colors relative z-0">
-                            <h3 class="font-serif text-xl font-bold text-[#232124] mb-2">Almaty-Karakol Transfer</h3>
-                            <div class="flex items-center text-[#464348] text-sm mb-4 font-medium">
-                                <i data-lucide="clock" class="w-4 h-4 mr-1.5 text-orange-600"></i>
-                                2 Days / 1 Night
-                            </div>
-                            <p class="text-[#464348]/90 mb-6 flex-grow leading-relaxed">
-                                Experience the highlights of Southern Kazakhstan on this 2 day transfer from Karakol-Almaty, via Charyn Canyon & Kolsai Lakes. 
+                    <!-- Contact Form (Left) -->
+                    <div class="lg:col-span-7">
+                        <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border border-[#464348]/10 relative overflow-hidden h-full flex flex-col justify-center">
+                            <!-- Subtle decorative background element -->
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-orange-600/5 rounded-bl-full -z-0"></div>
+                            
+                            <h2 class="font-serif text-3xl md:text-4xl font-bold text-[#232124] mb-4 relative z-10">Got a question? Ask us anything!</h2>
+                            <p class="text-[#464348] text-lg mb-8 leading-relaxed relative z-10">
+                                Need more info on one of our trips, car rentals or room availability? Reach out to us via the contact form below and we'll get back to you as soon as possible.
                             </p>
-                            <div class="flex gap-3 mt-auto pt-2">
-                                <a href="https://snowleopardhostel.com/tours-and-transfers/karakol-almaty-transfer/" class="flex-1 flex items-center justify-center border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white font-bold py-2.5 px-2 rounded-lg transition-colors text-sm">
-                                    View Details
-                                </a>
-                                <a href="https://snowleopardhostel.com/contact/" class="flex-1 flex items-center justify-center bg-orange-600 hover:bg-orange-500 text-white font-bold py-2.5 px-2 rounded-lg transition-colors text-sm shadow-sm">
-                                    Enquire Now
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Trip 2: Horse Riding Tours -->
-                    <div class="shrink-0 w-[85vw] sm:w-[45vw] lg:w-[30vw] flex flex-col group relative drop-shadow-lg hover:drop-shadow-xl transition-all duration-300">
-                        <!-- Mountain-shaped image wrapper - Shallow Cut -->
-                        <div class="relative h-64 [clip-path:polygon(0_15%,_30%_5%,_40%_10%,_60%_0%,_75%_6%,_100%_12%,_100%_100%,_0_100%)] overflow-hidden z-10">
-                            <img src="horse-riding-tours.jpg" alt="Horse Riding Tours" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.src='https://images.unsplash.com/photo-1553531580-6520e7225121?auto=format&fit=crop&q=80&w=800'" />
-                        </div>
-                        <!-- Icon floating in the 'sky' (negative space) -->
-                        <div class="absolute top-10 right-6 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md border border-[#464348]/10 text-orange-600 z-20 group-hover:-translate-y-1 transition-transform duration-300">
-                            <i data-lucide="mountain" class="w-5 h-5"></i>
-                        </div>
-                        <!-- White text card tucked under the clipped image -->
-                        <div class="bg-white p-6 flex flex-col flex-grow pt-5 -mt-1 rounded-b-2xl border-x border-b border-[#464348]/10 group-hover:border-orange-600/40 transition-colors relative z-0">
-                            <h3 class="font-serif text-xl font-bold text-[#232124] mb-2">Horse Riding Tours</h3>
-                            <div class="flex items-center text-[#464348] text-sm mb-4 font-medium">
-                                <i data-lucide="clock" class="w-4 h-4 mr-1.5 text-orange-600"></i>
-                                Day Trips & Multi Day Trips
-                            </div>
-                            <p class="text-[#464348]/90 mb-6 flex-grow leading-relaxed">
-                                Explore Kyrgyzstan's mountains on horseback! Visit majestic lakes and alpine valleys with our professional, English speaking horse guides.
-                            </p>
-                            <div class="flex gap-3 mt-auto pt-2">
-                                <a href="https://snowleopardhostel.com/tours-and-transfers/horse-riding-tours/" class="flex-1 flex items-center justify-center border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white font-bold py-2.5 px-2 rounded-lg transition-colors text-sm">
-                                    View Details
-                                </a>
-                                <a href="https://snowleopardhostel.com/contact/" class="flex-1 flex items-center justify-center bg-orange-600 hover:bg-orange-500 text-white font-bold py-2.5 px-2 rounded-lg transition-colors text-sm shadow-sm">
-                                    Enquire Now
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Trip 3: Jeep Tours -->
-                    <div class="shrink-0 w-[85vw] sm:w-[45vw] lg:w-[30vw] flex flex-col group relative drop-shadow-lg hover:drop-shadow-xl transition-all duration-300">
-                        <!-- Mountain-shaped image wrapper - Shallow Cut -->
-                        <div class="relative h-64 [clip-path:polygon(0_15%,_30%_5%,_40%_10%,_60%_0%,_75%_6%,_100%_12%,_100%_100%,_0_100%)] overflow-hidden z-10">
-                            <img src="jeep-tours.jpg" alt="Jeep Tours" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                        </div>
-                        <!-- Icon floating in the 'sky' (negative space) -->
-                        <div class="absolute top-10 right-6 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md border border-[#464348]/10 text-orange-600 z-20 group-hover:-translate-y-1 transition-transform duration-300">
-                            <i data-lucide="van" class="w-5 h-5"></i>
-                        </div>
-                        <!-- White text card tucked under the clipped image -->
-                        <div class="bg-white p-6 flex flex-col flex-grow pt-5 -mt-1 rounded-b-2xl border-x border-b border-[#464348]/10 group-hover:border-orange-600/40 transition-colors relative z-0">
-                            <h3 class="font-serif text-xl font-bold text-[#232124] mb-2">Jeep Tours</h3>
-                            <div class="flex items-center text-[#464348] text-sm mb-4 font-medium">
-                                <i data-lucide="clock" class="w-4 h-4 mr-1.5 text-orange-600"></i>
-                                Day Trip
-                            </div>
-                            <p class="text-[#464348]/90 mb-6 flex-grow leading-relaxed">
-                                Explore the highlights of Issyk Kul’s south shore by jeep, visiting iconic spots such as Skazka Canyon, Barskoon Waterfalls, and Jeti-Oguz Valley.
-                            </p>
-                            <div class="flex gap-3 mt-auto pt-2">
-                                <a href="https://snowleopardhostel.com/tours-and-transfers/jeep-tours/" class="flex-1 flex items-center justify-center border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white font-bold py-2.5 px-2 rounded-lg transition-colors text-sm">
-                                    View Details
-                                </a>
-                                <a href="https://snowleopardhostel.com/contact/" class="flex-1 flex items-center justify-center bg-orange-600 hover:bg-orange-500 text-white font-bold py-2.5 px-2 rounded-lg transition-colors text-sm shadow-sm">
-                                    Enquire Now
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Trip 4: Hiking Tours -->
-                    <div class="shrink-0 w-[85vw] sm:w-[45vw] lg:w-[30vw] flex flex-col group relative drop-shadow-lg hover:drop-shadow-xl transition-all duration-300">
-                        <!-- Mountain-shaped image wrapper - Shallow Cut -->
-                        <div class="relative h-64 [clip-path:polygon(0_15%,_30%_5%,_40%_10%,_60%_0%,_75%_6%,_100%_12%,_100%_100%,_0_100%)] overflow-hidden z-10">
-                            <img src="hiking-tours.jpg" alt="Ala-Kul Lake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                        </div>
-                        <!-- Icon floating in the 'sky' (negative space) -->
-                        <div class="absolute top-10 right-6 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md border border-[#464348]/10 text-orange-600 z-20 group-hover:-translate-y-1 transition-transform duration-300">
-                            <i data-lucide="footprints" class="w-5 h-5"></i>
-                        </div>
-                        <!-- White text card tucked under the clipped image -->
-                        <div class="bg-white p-6 flex flex-col flex-grow pt-5 -mt-1 rounded-b-2xl border-x border-b border-[#464348]/10 group-hover:border-orange-600/40 transition-colors relative z-0">
-                            <h3 class="font-serif text-xl font-bold text-[#232124] mb-2">Hiking Tours</h3>
-                            <div class="flex items-center text-[#464348] text-sm mb-4 font-medium">
-                                <i data-lucide="clock" class="w-4 h-4 mr-1.5 text-orange-600"></i>
-                                Day Trips & Multi-Day Trips
-                            </div>
-                            <p class="text-[#464348]/90 mb-6 flex-grow leading-relaxed">
-                                Trek Kyrgyzstan's Celestial Tien-Shan Mountains with our experienced, English speaking guides.  Customised, tailored itineraries available on request.
-                            </p>
-                            <div class="flex gap-3 mt-auto pt-2">
-                                <a href="https://snowleopardhostel.com/tours-and-transfers/hiking-tours/" class="flex-1 flex items-center justify-center border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white font-bold py-2.5 px-2 rounded-lg transition-colors text-sm">
-                                    View Details
-                                </a>
-                                <a href="https://snowleopardhostel.com/contact/" class="flex-1 flex items-center justify-center bg-orange-600 hover:bg-orange-500 text-white font-bold py-2.5 px-2 rounded-lg transition-colors text-sm shadow-sm">
-                                    Enquire Now
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Trip 5: Bishkek Airport Transfer -->
-                    <div class="shrink-0 w-[85vw] sm:w-[45vw] lg:w-[30vw] flex flex-col group relative drop-shadow-lg hover:drop-shadow-xl transition-all duration-300">
-                        <!-- Mountain-shaped image wrapper - Shallow Cut -->
-                        <div class="relative h-64 [clip-path:polygon(0_15%,_30%_5%,_40%_10%,_60%_0%,_75%_6%,_100%_12%,_100%_100%,_0_100%)] overflow-hidden z-10">
-                            <img src="hiking-tours.jpg" alt="Ala-Kul Lake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                        </div>
-                        <!-- Icon floating in the 'sky' (negative space) -->
-                        <div class="absolute top-10 right-6 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md border border-[#464348]/10 text-orange-600 z-20 group-hover:-translate-y-1 transition-transform duration-300">
-                            <i data-lucide="van" class="w-5 h-5"></i>
-                        </div>
-                        <!-- White text card tucked under the clipped image -->
-                        <div class="bg-white p-6 flex flex-col flex-grow pt-5 -mt-1 rounded-b-2xl border-x border-b border-[#464348]/10 group-hover:border-orange-600/40 transition-colors relative z-0">
-                            <h3 class="font-serif text-xl font-bold text-[#232124] mb-2">Bishkek Airport Transfer</h3>
-                            <div class="flex items-center text-[#464348] text-sm mb-4 font-medium">
-                                <i data-lucide="clock" class="w-4 h-4 mr-1.5 text-orange-600"></i>
-                                5-7 hours
-                            </div>
-                            <p class="text-[#464348]/90 mb-6 flex-grow leading-relaxed">
-                                Private airport transfer from Bishkek Airport to Karakol (or opposite direction) available upon request.
-                            </p>
-                            <div class="flex gap-3 mt-auto pt-2">
-                                <a href="https://snowleopardhostel.com/tours-and-transfers/bishkek-airport-transfer/" class="flex-1 flex items-center justify-center border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white font-bold py-2.5 px-2 rounded-lg transition-colors text-sm">
-                                    View Details
-                                </a>
-                                <a href="https://snowleopardhostel.com/contact/" class="flex-1 flex items-center justify-center bg-orange-600 hover:bg-orange-500 text-white font-bold py-2.5 px-2 rounded-lg transition-colors text-sm shadow-sm">
-                                    Enquire Now
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                
-            </div>
-        </section>
-
-        <!-- Hostel Teaser Section -->
-        <section class="py-20 bg-[#aca8aa]/30 border-t border-[#464348]/10">
-            <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col lg:flex-row items-center gap-12">
-                    <div class="lg:w-1/2">
-                        <h2 class="font-serif text-3xl md:text-4xl font-bold text-[#232124] mb-6">Your home away from home</h2>
-                        <p class="text-[#464348] text-lg mb-8 leading-relaxed">
-                            Snow Leopard Hostel is a cozy, family run guesthouse offering the perfect base camp for your Karakol adventure.  
-                        </p>
-                        
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-                            <div class="flex items-start gap-3">
-                                <div class="bg-white p-3 rounded-lg border border-[#464348]/10 text-orange-600 shadow-sm">
-                                    <i data-lucide="bed-double" class="w-6 h-6"></i>
+                            
+                            <form action="#" method="POST" class="space-y-6 relative z-10">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <!-- Name -->
+                                    <div>
+                                        <label for="name" class="block text-sm font-bold text-[#232124] mb-2">Full Name *</label>
+                                        <input type="text" id="name" name="name" required 
+                                            class="w-full px-4 py-3 rounded-lg border border-[#464348]/20 bg-[#aca8aa]/5 text-[#464348] focus:outline-none focus:ring-2 focus:ring-orange-600/50 focus:border-orange-600 transition-colors placeholder-[#aca8aa]"
+                                            placeholder="Snow Leopard">
+                                    </div>
+                                    <!-- Email -->
+                                    <div>
+                                        <label for="email" class="block text-sm font-bold text-[#232124] mb-2">Email Address *</label>
+                                        <input type="email" id="email" name="email" required 
+                                            class="w-full px-4 py-3 rounded-lg border border-[#464348]/20 bg-[#aca8aa]/5 text-[#464348] focus:outline-none focus:ring-2 focus:ring-orange-600/50 focus:border-orange-600 transition-colors placeholder-[#aca8aa]"
+                                            placeholder="example.snowleopard@gmail.com">
+                                    </div>
                                 </div>
+                                
+                                <!-- Inquiry Type -->
                                 <div>
-                                    <h4 class="font-bold text-[#232124]">Comfortable Beds</h4>
-                                    <p class="text-sm text-[#464348]">Clean and cozy matresses</p>
+                                    <label for="subject" class="block text-sm font-bold text-[#232124] mb-2">What are you inquiring about?</label>
+                                    <div class="relative">
+                                        <select id="subject" name="subject" 
+                                            class="w-full px-4 py-3 rounded-lg border border-[#464348]/20 bg-[#aca8aa]/5 text-[#464348] appearance-none focus:outline-none focus:ring-2 focus:ring-orange-600/50 focus:border-orange-600 transition-colors cursor-pointer">
+                                            <option value="general">General Inquiry</option>
+                                            <option value="room">Hotel & Hostel Rooms</option>
+                                            <option value="almaty-karakol-transfer">Almaty-Karakol Transfer</option>
+                                            <option value="horse-riding-tours">Horse Riding Tours</option>
+                                            <option value="jeep-tours">Jeep Tours</option>
+                                            <option value="car-rental">Car Rental</option>
+                                            <option value="hiking-tours">Hiking Tours</option>
+                                        </select>
+                                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[#464348]">
+                                            <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <div class="bg-white p-3 rounded-lg border border-[#464348]/10 text-orange-600 shadow-sm">
-                                    <i data-lucide="wifi" class="w-6 h-6"></i>
-                                </div>
+
+                                <!-- Message -->
                                 <div>
-                                    <h4 class="font-bold text-[#232124]">Wi-Fi Available</h4>
-                                    <p class="text-sm text-[#464348]">Free high-speed internet</p>
+                                    <label for="message" class="block text-sm font-bold text-[#232124] mb-2">Your Message *</label>
+                                    <textarea id="message" name="message" rows="5" required 
+                                        class="w-full px-4 py-3 rounded-lg border border-[#464348]/20 bg-[#aca8aa]/5 text-[#464348] focus:outline-none focus:ring-2 focus:ring-orange-600/50 focus:border-orange-600 transition-colors placeholder-[#aca8aa] resize-y"
+                                        placeholder="Please provide dates, number of people, or any specific questions you have..."></textarea>
                                 </div>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <div class="bg-white p-3 rounded-lg border border-[#464348]/10 text-orange-600 shadow-sm">
-                                    <i data-lucide="coffee" class="w-6 h-6"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-[#232124]">Cafeteria & Social area</h4>
-                                    <p class="text-sm text-[#464348]">Serving breakfast and Italian Coffee</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-3">
-                                <div class="bg-white p-3 rounded-lg border border-[#464348]/10 text-orange-600 shadow-sm">
+                                
+                                <!-- Submit Button -->
+                                <button type="submit" class="w-full bg-orange-600 hover:bg-orange-500 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-lg shadow-orange-600/30 flex justify-center items-center gap-2">
+                                    Send Message <i data-lucide="send" class="w-5 h-5"></i>
+                                </button>
+                                
+                                <p class="text-xs text-[#aca8aa] text-center mt-4">
+                                    We'll get back to you ASAP! For faster response time message or call Jalil via Whatsapp, +996551932681
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information (Right) -->
+                    <div class="lg:col-span-5 flex flex-col justify-start mt-8 lg:mt-0">
+                        <div class="space-y-6 mb-8">
+                            <!-- Address -->
+                            <div class="flex items-start gap-4">
+                                <div class="bg-white p-3.5 rounded-xl border border-[#464348]/10 text-orange-600 shadow-sm shrink-0 mt-1">
                                     <i data-lucide="map-pin" class="w-6 h-6"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-[#232124]">Expert Guidance</h4>
-                                    <p class="text-sm text-[#464348]">Free logistical help for your travel plans</p>
+                                    <h4 class="font-bold text-[#232124] text-lg mb-1">Location</h4>
+                                    <p class="text-[#464348] leading-relaxed">
+                                        FCQ6+8C6 182 Karasaeva<br>
+                                        Karakol, Kyrgyzstan
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Phone / WhatsApp -->
+                            <div class="flex items-start gap-4">
+                                <div class="bg-white p-3.5 rounded-xl border border-[#464348]/10 text-orange-600 shadow-sm shrink-0 mt-1">
+                                    <i data-lucide="phone" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-[#232124] text-lg mb-1">Phone & WhatsApp</h4>
+                                    <p class="text-[#464348] mb-1">+996 551 932 681</p>
+                                    <a href="https://wa.me/996551932681" target="_blank" class="text-orange-600 hover:text-orange-500 font-medium text-sm flex items-center gap-1 transition-colors">
+                                        Message us on WhatsApp <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- Email -->
+                            <div class="flex items-start gap-4">
+                                <div class="bg-white p-3.5 rounded-xl border border-[#464348]/10 text-orange-600 shadow-sm shrink-0 mt-1">
+                                    <i data-lucide="mail" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-[#232124] text-lg mb-1">Email</h4>
+                                    <a href="mailto:info@snowleopardhostel.com" class="text-[#464348] hover:text-orange-600 transition-colors">
+                                        info@snowleopardhostel.com
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Hours -->
+                            <div class="flex items-start gap-4">
+                                <div class="bg-white p-3.5 rounded-xl border border-[#464348]/10 text-orange-600 shadow-sm shrink-0 mt-1">
+                                    <i data-lucide="clock" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-[#232124] text-lg mb-1">Reception Hours</h4>
+                                    <p class="text-[#464348]">Open 24 Hours for Check-in</p>
                                 </div>
                             </div>
                         </div>
 
-                        <a href="https://snowleopardhostel.com/our-rooms/" class="inline-block bg-orange-600 hover:bg-orange-500 text-white px-8 py-3.5 rounded-lg font-bold transition-colors shadow-lg shadow-orange-600/30">
-                            View Room Details
-                        </a>
+                        <!-- Social Links Box (Below Contact Details) -->
+                        <div class="bg-white p-6 rounded-2xl border border-[#464348]/10 shadow-sm">
+                            <h4 class="font-bold text-[#232124] mb-4">Follow Us On Social Media</h4>
+                            <div class="flex gap-4">
+                                <a href="https://www.instagram.com/snow.leopard.hostel/" target="_blank" class="bg-[#aca8aa]/10 hover:bg-orange-50 p-3 rounded-full text-[#464348] hover:text-orange-600 transition-colors border border-transparent hover:border-orange-200">
+                                    <i data-lucide="instagram" class="w-5 h-5"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="lg:w-1/2 w-full grid grid-cols-2 gap-4">
-                        <img 
-                            src="room-image-3-by-2.jpg" 
-                            alt="Twin room with two beds" 
-                            class="rounded-2xl w-full h-64 object-cover shadow-lg border border-[#464348]/10"
-                        />
-                        <img 
-                            src="motorbike-image.jpg" 
-                            alt="Motorbikers outside of Snow Leopard Hostel" 
-                            class="rounded-2xl w-full h-64 object-cover shadow-lg border border-[#464348]/10 mt-8"
-                        />
-                    </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- Guest Reviews Section -->
-        <section class="py-20 bg-white border-t border-[#464348]/10 overflow-hidden relative">
-            <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 mb-10 text-center">
-                <h2 class="font-serif text-3xl md:text-4xl font-bold text-[#232124] mb-4">What Our Guests Say</h2>
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3">
-                    <div class="flex items-center gap-2">
-                        <span class="font-bold text-[#232124] text-xl">4.8</span>
-                        <div class="flex text-orange-500">
-                            <i data-lucide="star" class="w-5 h-5 fill-orange-500 text-orange-500"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-orange-500 text-orange-500"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-orange-500 text-orange-500"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-orange-500 text-orange-500"></i>
-                            <i data-lucide="star" class="w-5 h-5 fill-orange-500 text-orange-500"></i>
-                        </div>
-                    </div>
-                    <span class="text-sm text-[#464348] font-medium">Based on 193 Google Reviews</span>
-                </div>
-            </div>
-
-            <!-- Reviews Slider Container -->
-            <div class="relative w-full max-w-[100rem] mx-auto">
-                <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
-                    <div id="reviewsCarousel" class="flex overflow-x-auto gap-6 pb-8 pt-4 no-scrollbar touch-pan-x cursor-grab active:cursor-grabbing">
-                        
-                        <!-- Review 1 -->
-                        <div class="shrink-0 w-[85vw] sm:w-[350px] bg-[#aca8aa]/5 p-6 rounded-2xl border border-[#464348]/10 shadow-sm hover:shadow-md flex flex-col transition-all duration-300">
-                            <div class="flex justify-between items-start mb-4">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 font-bold text-lg">C</div>
-                                    <div>
-                                        <h4 class="font-bold text-[#232124] text-sm">Casey H</h4>
-                                        <p class="text-xs text-[#aca8aa]">October, 2025</p>
-                                    </div>
-                                </div>
-                                <!-- Google Logo SVG -->
-                                <svg class="w-5 h-5 opacity-90" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-                            </div>
-                            <div class="flex gap-0.5 text-orange-500 mb-3">
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                            </div>
-                            <p class="text-[#464348] text-sm leading-relaxed italic">
-                                "I loved staying at Snow Leopard. Myself and 5 friends stayed here for four nights. It has such a nice vibe that Aizada and Jalil foster alongside their family. They are so welcoming and helpful, they will do their best to organise whatever it is that you are after at the drop of a hat. The weather meant that we had to postpone our hikes but it meant that we got to spend more time exploring Karakol which was a bonus."
-                            </p>
-                        </div>
-
-                        <!-- Review 2 -->
-                        <div class="shrink-0 w-[85vw] sm:w-[350px] bg-[#aca8aa]/5 p-6 rounded-2xl border border-[#464348]/10 shadow-sm hover:shadow-md flex flex-col transition-all duration-300">
-                            <div class="flex justify-between items-start mb-4">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 font-bold text-lg">J</div>
-                                    <div>
-                                        <h4 class="font-bold text-[#232124] text-sm">James G</h4>
-                                        <p class="text-xs text-[#aca8aa]">May, 2025</p>
-                                    </div>
-                                </div>
-                                <svg class="w-5 h-5 opacity-90" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-                            </div>
-                            <div class="flex gap-0.5 text-orange-500 mb-3">
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                            </div>
-                            <p class="text-[#464348] text-sm leading-relaxed italic">
-                                "We stayed here before and after hiking to Altyn-arashan, and we also booked a horse trek through the hostel. The rooms are warm and cosy and there is a kitchen facility. The owners are very nice - I’d definitely recommend staying here in Karakol!"
-                            </p>
-                        </div>
-
-                        <!-- Review 3 -->
-                        <div class="shrink-0 w-[85vw] sm:w-[350px] bg-[#aca8aa]/5 p-6 rounded-2xl border border-[#464348]/10 shadow-sm hover:shadow-md flex flex-col transition-all duration-300">
-                            <div class="flex justify-between items-start mb-4">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 font-bold text-lg">O</div>
-                                    <div>
-                                        <h4 class="font-bold text-[#232124] text-sm">Oliver K</h4>
-                                        <p class="text-xs text-[#aca8aa]">August, 2024</p>
-                                    </div>
-                                </div>
-                                <svg class="w-5 h-5 opacity-90" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-                            </div>
-                            <div class="flex gap-0.5 text-orange-500 mb-3">
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                            </div>
-                            <p class="text-[#464348] text-sm leading-relaxed italic">
-                                "Wonderful hostel run by Jelil and his family. They have the best English of anyone in Kyrgyzstan and go out of their way to support you and your plans. They booked taxis, helped with washing and recommended places to eat! The rooms are clean and well equipped. The location of the hostel is perfect for getting out to the hikes as well as exploring Karakol. Make sure you play some chess with his daughter!"
-                            </p>
-                        </div>
-
-                        <!-- Review 4 -->
-                        <div class="shrink-0 w-[85vw] sm:w-[350px] bg-[#aca8aa]/5 p-6 rounded-2xl border border-[#464348]/10 shadow-sm hover:shadow-md flex flex-col transition-all duration-300">
-                            <div class="flex justify-between items-start mb-4">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 font-bold text-lg">J</div>
-                                    <div>
-                                        <h4 class="font-bold text-[#232124] text-sm">Justin D</h4>
-                                        <p class="text-xs text-[#aca8aa]">June, 2024</p>
-                                    </div>
-                                </div>
-                                <svg class="w-5 h-5 opacity-90" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-                            </div>
-                            <div class="flex gap-0.5 text-orange-500 mb-3">
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                            </div>
-                            <p class="text-[#464348] text-sm leading-relaxed italic">
-                                "I loved staying here! Jalil and his wife Alzada, are wonderful! They provided great service including breakfast and tea/coffee in the morning, and they were so well connected to guiding services and tours. We did a horseback riding tour which was quite the adventure! Very worthwhile and such beautiful views! Adyl and his guiding partner were really fun to talk to and picked a great route! Also don’t miss out on the Banya (Sauna) in the evenings!"
-                            </p>
-                        </div>
-
-                        <!-- Review 5 -->
-                        <div class="shrink-0 w-[85vw] sm:w-[350px] bg-[#aca8aa]/5 p-6 rounded-2xl border border-[#464348]/10 shadow-sm hover:shadow-md flex flex-col transition-all duration-300">
-                            <div class="flex justify-between items-start mb-4">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 font-bold text-lg">J</div>
-                                    <div>
-                                        <h4 class="font-bold text-[#232124] text-sm">Joe P</h4>
-                                        <p class="text-xs text-[#aca8aa]">July. 2025</p>
-                                    </div>
-                                </div>
-                                <svg class="w-5 h-5 opacity-90" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-                            </div>
-                            <div class="flex gap-0.5 text-orange-500 mb-3">
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                                <i data-lucide="star" class="w-4 h-4 fill-orange-500 text-orange-500"></i>
-                            </div>
-                            <p class="text-[#464348] text-sm leading-relaxed italic">
-                                "Incredible hostel. Super social, so cozy, delightful, helpful, fun, incredibly kind hosts. Such a vibe, and such a perfect spot to stay and rerun to after hikes etc. couldn’t love it more. And amazing facilities. There’s even a Sauna, and some gym equipment, amazing kitchen, and a yurt. Thanks so Much Jalil! I hope to see you again"
-                            </p>
-                        </div>
-
-                    </div>
+        <!-- Map Section -->
+        <section class="pb-24">
+            <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-[#232124] mb-8 text-center">Find us on Google Maps</h2>
+                <div class="w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-lg border border-[#464348]/10 relative bg-gray-200">
+                    <!-- Google Maps Embed for Snow Leopard Hostel -->
+                    <iframe 
+                        src="https://maps.google.com/maps?q=Snow+Leopard+Hostel,+Karakol,+Kyrgyzstan&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        class="w-full h-full border-0" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
         </section>
-
     </main>
 
     <!-- Footer -->
@@ -641,7 +384,7 @@
                             <li><a href="https://snowleopardhostel.com/our-rooms/" class="hover:text-orange-400 transition-colors">Our Rooms</a></li>
                             <li><a href="https://snowleopardhostel.com/car-rental/" class="hover:text-orange-400 transition-colors">Car Rental</a></li>
                             <li><a href="https://snowleopardhostel.com/faqs/" class="hover:text-orange-400 transition-colors">FAQ's</a></li>
-                            <li><a href="https://snowleopardhostel.com/contact/" class="hover:text-orange-400 transition-colors">Contact</a></li>
+                            <li><a href="https://snowleopardhostel.com/contact/" class="text-orange-400 transition-colors">Contact</a></li>
                         </ul>
                     </div>
 
@@ -762,81 +505,6 @@
                 mobileToursMenu.classList.toggle('hidden');
                 mobileToursMenu.classList.toggle('flex');
                 mobileToursIcon.classList.toggle('rotate-180');
-            });
-        }
-
-        // Carousel Scroll & Auto-Loop Logic
-        function initAutoScrollCarousel(carouselId, intervalMs = 20) {
-            const carousel = document.getElementById(carouselId);
-            if (!carousel) return null;
-
-            // Clone the carousel items to create an infinite loop effect
-            const originalItems = Array.from(carousel.children);
-            originalItems.forEach(item => {
-                const clone = item.cloneNode(true);
-                carousel.appendChild(clone);
-            });
-
-            let isHovered = false;
-
-            // Auto-scroll continuous loop function
-            setInterval(() => {
-                if (!isHovered) {
-                    carousel.scrollLeft += 1; 
-
-                    // When we scroll exactly past the first set of items (halfway point of the new cloned container), reset to 0 seamlessly
-                    if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
-                        carousel.scrollLeft -= carousel.scrollWidth / 2;
-                    }
-                }
-            }, intervalMs);
-
-            // Pause auto-scroll on interactions
-            carousel.addEventListener('mouseenter', () => isHovered = true);
-            carousel.addEventListener('mouseleave', () => isHovered = false);
-            carousel.addEventListener('touchstart', () => isHovered = true);
-            carousel.addEventListener('touchend', () => {
-                setTimeout(() => isHovered = false, 1500); 
-            });
-
-            return { 
-                carousel, 
-                setHovered: (val) => isHovered = val 
-            };
-        }
-
-        // Initialize Carousels
-        const toursState = initAutoScrollCarousel('toursCarousel', 12); // Increased speed
-        initAutoScrollCarousel('reviewsCarousel', 30); // Slightly slower for easier reading
-
-        // Manual button controls for Tours
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-
-        if(toursState && prevBtn && nextBtn) {
-            const { carousel, setHovered } = toursState;
-            
-            const getScrollAmount = () => {
-                const card = carousel.querySelector('div');
-                return card.offsetWidth + 24; // 24px is the gap-6
-            };
-
-            nextBtn.addEventListener('click', () => {
-                carousel.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
-            });
-
-            prevBtn.addEventListener('click', () => {
-                // Prevent jumping issue when manually clicking "prev" at the very beginning
-                if (carousel.scrollLeft <= 0) {
-                    carousel.scrollLeft = carousel.scrollWidth / 2;
-                }
-                carousel.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
-            });
-
-            // Briefly pause auto-scroll when using manual controls
-            [prevBtn, nextBtn].forEach(btn => {
-                btn.addEventListener('mouseenter', () => setHovered(true));
-                btn.addEventListener('mouseleave', () => setHovered(false));
             });
         }
     </script>
