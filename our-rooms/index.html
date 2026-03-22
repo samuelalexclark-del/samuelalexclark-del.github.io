@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Rooms | Snow Leopard Hostel</title>
+    <meta name="description" content="Discover comfortable private rooms and dormitories at Snow Leopard Hostel in Karakol, Kyrgyzstan. Your perfect basecamp for adventure.">
+    <link rel="canonical" href="https://snowleopardhostel.com/our-rooms/" />
+    <link rel="icon" href="/favicon-image.jpg">
+    <link rel="apple-touch-icon" href="/favicon-image.jpg">
+    <!-- Google Fonts for Adventure & Professional Theme -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use the new fonts -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons for web -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen flex flex-col font-sans text-[#464348] bg-[#aca8aa]/10">
+
+    <!-- Navigation -->
+    <nav class="bg-[#aca8aa]/80 backdrop-blur-md sticky top-0 z-50 border-b border-[#464348]/20">
+        <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24 gap-4 lg:gap-6 xl:gap-8">
+                <a href="https://snowleopardhostel.com/" class="flex items-center gap-3 lg:gap-4 xl:gap-6 cursor-pointer flex-shrink-0">
+                    <img src="logo.jpg" alt="Snow Leopard Hostel Logo" class="h-14 w-14 md:h-16 md:w-16 xl:h-20 xl:w-20 rounded-full object-cover shadow-md border-2 border-orange-600/60" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'150\' height=\'150\'><rect width=\'150\' height=\'150\' fill=\'%23ea580c\'/></svg>'" />
+                    <span class="font-serif font-bold text-xl md:text-2xl xl:text-3xl tracking-tight text-[#232124] whitespace-nowrap">
+                        Snow Leopard <span class="font-sans text-orange-600 text-lg md:text-xl xl:text-2xl">Hostel & Trips</span>
+                    </span>
+                </a>
+                
+                <!-- Desktop Nav -->
+                <div class="hidden lg:flex lg:space-x-4 xl:space-x-8 items-center flex-shrink-0">
+                    <a href="https://snowleopardhostel.com/" class="text-center text-sm font-medium transition-colors text-[#464348] hover:text-orange-600 py-2 border-b-2 border-transparent hover:border-orange-600 whitespace-nowrap">Home</a>
+                    
+                    <!-- About Dropdown -->
+                    <div class="relative group">
+                        <span class="cursor-pointer text-center text-sm font-medium transition-colors text-[#464348] hover:text-orange-600 py-2 border-b-2 border-transparent group-hover:border-orange-600 flex items-center gap-1 whitespace-nowrap">
+                            About <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"></i>
+                        </span>
+                        
+                        <!-- Dropdown Menu Box with invisible hover bridge -->
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-50">
+                            <div class="w-48 bg-white border border-[#464348]/10 rounded-xl shadow-xl flex flex-col overflow-hidden">
+                                <a href="https://snowleopardhostel.com/about/our-hostel/" class="px-5 py-3 text-sm font-medium text-[#464348] hover:bg-orange-50 hover:text-orange-600 transition-colors border-b border-[#464348]/5 text-left">Our Hostel</a>
+                                <a href="https://snowleopardhostel.com/about/faqs/" class="px-5 py-3 text-sm font-medium text-[#464348] hover:bg-orange-50 hover:text-orange-600 transition-colors text-left">FAQ's</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tours Dropdown -->
+                    <div class="relative group">
+                        <span class="cursor-pointer text-center text-sm font-medium transition-colors text-[#464348] hover:text-orange-600 py-2 border-b-2 border-transparent group-hover:border-orange-600 flex items-center gap-1 whitespace-nowrap">
+                            Tours & Transfers <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"></i>
+                        </span>
+                        
+                        <!-- Dropdown Menu Box with invisible hover bridge -->
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-50">
+                            <div class="w-64 bg-white border border-[#464348]/10 rounded-xl shadow-xl flex flex-col overflow-hidden">
+                                <a href="https://snowleopardhostel.com/tours-and-transfers/karakol-almaty-transfer/" class="px-5 py-3 text-sm font-medium text-[#464348] hover:bg-orange-50 hover:text-orange-600 transition-colors border-b border-[#464348]/5 text-left">Almaty-Karakol Transfer</a>
+                                <a href="https://snowleopardhostel.com/tours-and-transfers/horse-riding-tours/" class="px-5 py-3 text-sm font-medium text-[#464348] hover:bg-orange-50 hover:text-orange-600 transition-colors border-b border-[#464348]/5 text-left">Horse Riding Tours</a>
+                                <a href="https://snowleopardhostel.com/tours-and-transfers/jeep-tours/" class="px-5 py-3 text-sm font-medium text-[#464348] hover:bg-orange-50 hover:text-orange-600 transition-colors border-b border-[#464348]/5 text-left">Jeep Tours</a>
+                                <a href="https://snowleopardhostel.com/tours-and-transfers/hiking-tours/" class="px-5 py-3 text-sm font-medium text-[#464348] hover:bg-orange-50 hover:text-orange-600 transition-colors text-left">Hiking Tours</a>
+                                <a href="https://snowleopardhostel.com/tours-and-transfers/bishkek-airport-transfer/" class="px-5 py-3 text-sm font-medium text-[#464348] hover:bg-orange-50 hover:text-orange-600 transition-colors text-left">Bishkek Airport Transfer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://snowleopardhostel.com/our-rooms/" class="text-center text-sm font-medium transition-colors text-orange-600 py-2 border-b-2 border-orange-600 whitespace-nowrap">Our Rooms</a>
+                    <a href="https://snowleopardhostel.com/car-rental/" class="text-center text-sm font-medium transition-colors text-[#464348] hover:text-orange-600 py-2 border-b-2 border-transparent hover:border-orange-600 whitespace-nowrap">Car Rental</a>
+                    <a href="https://snowleopardhostel.com/contact/" class="text-center text-sm font-medium transition-colors text-[#464348] hover:text-orange-600 py-2 border-b-2 border-transparent hover:border-orange-600 whitespace-nowrap">Contact</a>
+                    <button class="bg-orange-600 hover:bg-orange-500 text-white px-4 xl:px-5 py-2.5 rounded-lg font-bold text-sm transition-colors shadow-lg shadow-orange-600/20 ml-2 whitespace-nowrap">
+                        Book Now
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-[#464348] hover:text-orange-600 focus:outline-none">
+                        <i data-lucide="menu" id="menu-icon" class="h-7 w-7"></i>
+                        <i data-lucide="x" id="close-icon" class="h-7 w-7 hidden"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-[#464348]/10 shadow-xl absolute w-full left-0">
+            <div class="px-4 pt-2 pb-6 space-y-4 flex flex-col">
+                <a href="https://snowleopardhostel.com/" class="text-center text-lg font-medium text-[#464348] hover:text-orange-600 py-2 border-b border-[#aca8aa]/30">Home</a>
+                
+                <!-- Mobile About Dropdown -->
+                <div class="flex flex-col border-b border-[#aca8aa]/30">
+                    <button id="mobile-about-btn" class="w-full flex justify-center items-center py-2 relative text-[#464348] hover:text-orange-600 focus:outline-none">
+                        <span class="text-center text-lg font-medium">About</span>
+                        <div class="absolute right-0 p-2">
+                            <i data-lucide="chevron-down" id="mobile-about-icon" class="w-5 h-5 transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div id="mobile-about-menu" class="hidden flex-col bg-[#aca8aa]/10 rounded-lg my-2 overflow-hidden">
+                        <a href="https://snowleopardhostel.com/about/our-hostel/" class="text-center py-3 text-base font-medium text-[#464348] hover:text-orange-600 border-b border-[#aca8aa]/10">Our Hostel</a>
+                        <a href="https://snowleopardhostel.com/about/faqs/" class="text-center py-3 text-base font-medium text-[#464348] hover:text-orange-600">FAQ's</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile Tours Dropdown -->
+                <div class="flex flex-col border-b border-[#aca8aa]/30">
+                    <button id="mobile-tours-btn" class="w-full flex justify-center items-center py-2 relative text-[#464348] hover:text-orange-600 focus:outline-none">
+                        <span class="text-center text-lg font-medium">Tours & Transfers</span>
+                        <div class="absolute right-0 p-2">
+                            <i data-lucide="chevron-down" id="mobile-tours-icon" class="w-5 h-5 transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div id="mobile-tours-menu" class="hidden flex-col bg-[#aca8aa]/10 rounded-lg my-2 overflow-hidden">
+                        <a href="https://snowleopardhostel.com/tours-and-transfers/karakol-almaty-transfer/" class="text-center py-3 text-base font-medium text-[#464348] hover:text-orange-600 border-b border-[#aca8aa]/10">Almaty-Karakol Transfer</a>
+                        <a href="https://snowleopardhostel.com/tours-and-transfers/horse-riding-tours/" class="text-center py-3 text-base font-medium text-[#464348] hover:text-orange-600 border-b border-[#aca8aa]/10">Horse Riding Tours</a>
+                        <a href="https://snowleopardhostel.com/tours-and-transfers/jeep-tours/" class="text-center py-3 text-base font-medium text-[#464348] hover:text-orange-600 border-b border-[#aca8aa]/10">Jeep Tours</a>
+                        <a href="https://snowleopardhostel.com/tours-and-transfers/hiking-tours/" class="text-center py-3 text-base font-medium text-[#464348] hover:text-orange-600">Hiking Tours</a>
+                        <a href="https://snowleopardhostel.com/tours-and-transfers/biskek-airport-transfer/" class="text-center py-3 text-base font-medium text-[#464348] hover:text-orange-600">Bishkek Airport Transfer</a>
+                    </div>
+                </div>
+
+                <a href="https://snowleopardhostel.com/our-rooms/" class="text-center text-lg font-medium text-orange-600 py-2 border-b border-[#aca8aa]/30">Hostel Rooms</a>
+                <a href="https://snowleopardhostel.com/car-rental/" class="text-center text-lg font-medium text-[#464348] hover:text-orange-600 py-2 border-b border-[#aca8aa]/30">Car Rental</a>
+                <a href="https://snowleopardhostel.com/contact/" class="text-center text-lg font-medium text-[#464348] hover:text-orange-600 py-2 border-b border-transparent">Contact</a>
+                <button class="bg-orange-600 hover:bg-orange-500 text-white py-3 rounded-lg font-bold mt-2 transition-colors w-full">Book Now</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow">
+        
+        <!-- Subtle Hero Section -->
+        <header class="relative h-[40vh] md:h-[50vh] flex items-center justify-center bg-[#232124] overflow-hidden">
+            <div class="absolute inset-0 w-full h-full">
+                <img 
+                    src="our-rooms-hero.jpg" 
+                    alt="Comfortable rooms at Snow Leopard Hostel" 
+                    class="w-full h-full object-cover object-center opacity-60 blur-[0px] scale-[1.02]"
+                />
+            </div>
+            
+            <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-10">
+                <h1 class="font-serif text-4xl md:text-5xl font-extrabold text-white mb-4 leading-tight drop-shadow-md">
+                    Our Rooms
+                </h1>
+            </div>
+        </header>
+
+        <!-- Room Types Cards Section -->
+        <section class="py-16 md:py-24 bg-white border-t border-[#464348]/10">
+            <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-[#232124] mb-4">Choose Your Room</h2>
+                    <p class="text-[#464348] text-lg">All of our rooms are decorated in a traditional Kyrgyz-Russian style, offering a clean and cozy space, each with its own private bathroom.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Dormitory Room Card -->
+                    <div class="bg-white rounded-2xl overflow-hidden border border-[#464348]/10 shadow-md hover:shadow-xl transition-shadow flex flex-col group">
+                        <div class="relative overflow-hidden h-64 cursor-pointer group/image" onclick="openLightbox('dorm')">
+                            <img src="dorm-room.jpg" alt="Dormitory Room" class="h-full w-full object-cover group-hover/image:scale-105 transition-transform duration-500" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'600\'><rect width=\'800\' height=\'600\' fill=\'%23aca8aa\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'40\' fill=\'white\' text-anchor=\'middle\' dominant-baseline=\'middle\'>Dormitory Room</text></svg>'" />
+                            <!-- Hover Overlay -->
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                                <div class="text-white text-center flex flex-col items-center transform translate-y-4 group-hover/image:translate-y-0 transition-transform duration-300">
+                                    <i data-lucide="expand" class="w-8 h-8 mb-2"></i>
+                                    <span class="font-bold tracking-wide">View Gallery</span>
+                                    <span class="text-sm opacity-80 mt-1">5 Images</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow">
+                            <h3 class="font-serif text-2xl font-bold text-[#232124] mb-3">Dormitory Room</h3>
+                            <p class="text-[#464348] mb-8 flex-grow leading-relaxed">4 Bed & 6 Bed Dorms with attached shared bathroom</p>
+                            <ul class="space-y-4 mb-8">
+                                <li class="flex items-center gap-4 text-[15px] font-medium text-[#464348]">
+                                    <div class="bg-orange-50 p-2 rounded text-orange-600"><i data-lucide="users" class="w-5 h-5"></i></div>
+                                    Shared occupancy
+                                </li>
+                                <li class="flex items-center gap-4 text-[15px] font-medium text-[#464348]">
+                                    <div class="bg-orange-50 p-2 rounded text-orange-600"><i data-lucide="circle-dollar-sign" class="w-5 h-5"></i></div>
+                                    $12 /person
+                                </li>
+                                <li class="flex items-center gap-4 text-[15px] font-medium text-[#464348]">
+                                    <div class="bg-orange-50 p-2 rounded text-orange-600"><i data-lucide="users" class="w-5 h-5"></i></div>
+                                    Perfect for backpackers
+                                </li>
+                            </ul>
+                            <button class="w-full bg-orange-600 hover:bg-orange-500 text-white py-3.5 rounded-lg font-bold transition-colors shadow-lg shadow-orange-600/20">Book Dorm Bed</button>
+                        </div>
+                    </div>
+
+                    <!-- Twin Room Card -->
+                    <div class="bg-white rounded-2xl overflow-hidden border border-[#464348]/10 shadow-md hover:shadow-xl transition-shadow flex flex-col group">
+                        <div class="relative overflow-hidden h-64 cursor-pointer group/image" onclick="openLightbox('twin')">
+                            <img src="twin-room.jpg" alt="Twin Room" class="h-full w-full object-cover group-hover/image:scale-105 transition-transform duration-500" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'600\'><rect width=\'800\' height=\'600\' fill=\'%23aca8aa\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'40\' fill=\'white\' text-anchor=\'middle\' dominant-baseline=\'middle\'>Twin Room</text></svg>'" />
+                            <!-- Hover Overlay -->
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                                <div class="text-white text-center flex flex-col items-center transform translate-y-4 group-hover/image:translate-y-0 transition-transform duration-300">
+                                    <i data-lucide="expand" class="w-8 h-8 mb-2"></i>
+                                    <span class="font-bold tracking-wide">View Gallery</span>
+                                    <span class="text-sm opacity-80 mt-1">5 Images</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow">
+                            <h3 class="font-serif text-2xl font-bold text-[#232124] mb-3">Twin Room</h3>
+                            <p class="text-[#464348] mb-8 flex-grow leading-relaxed">A private room featuring two comfortable single beds and a private bathroom. Perfect for friends & family members travelling in a duo.</p>
+                            <ul class="space-y-4 mb-8">
+                                <li class="flex items-center gap-4 text-[15px] font-medium text-[#464348]">
+                                    <div class="bg-orange-50 p-2 rounded text-orange-600"><i data-lucide="bed" class="w-5 h-5"></i></div>
+                                    Two single beds
+                                </li>
+                                <li class="flex items-center gap-4 text-[15px] font-medium text-[#464348]">
+                                    <div class="bg-orange-50 p-2 rounded text-orange-600"><i data-lucide="circle-dollar-sign" class="w-5 h-5"></i></div>
+                                    $40 /room
+                                </li>
+                                <li class="flex items-center gap-4 text-[15px] font-medium text-[#464348]">
+                                    <div class="bg-orange-50 p-2 rounded text-orange-600"><i data-lucide="users" class="w-5 h-5"></i></div>
+                                    2 people
+                                </li>
+                            </ul>
+                            <button class="w-full bg-orange-600 hover:bg-orange-500 text-white py-3.5 rounded-lg font-bold transition-colors shadow-lg shadow-orange-600/20">Book Twin Room</button>
+                        </div>
+                    </div>
+
+                    <!-- Double Room Card -->
+                    <div class="bg-white rounded-2xl overflow-hidden border border-[#464348]/10 shadow-md hover:shadow-xl transition-shadow flex flex-col group">
+                        <div class="relative overflow-hidden h-64 cursor-pointer group/image" onclick="openLightbox('double')">
+                            <img src="double-room.jpg" alt="Double Room" class="h-full w-full object-cover group-hover/image:scale-105 transition-transform duration-500" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'600\'><rect width=\'800\' height=\'600\' fill=\'%23aca8aa\'/><text x=\'50%\' y=\'50%\' font-family=\'sans-serif\' font-size=\'40\' fill=\'white\' text-anchor=\'middle\' dominant-baseline=\'middle\'>Double Room</text></svg>'" />
+                            <!-- Hover Overlay -->
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                                <div class="text-white text-center flex flex-col items-center transform translate-y-4 group-hover/image:translate-y-0 transition-transform duration-300">
+                                    <i data-lucide="expand" class="w-8 h-8 mb-2"></i>
+                                    <span class="font-bold tracking-wide">View Gallery</span>
+                                    <span class="text-sm opacity-80 mt-1">5 Images</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow">
+                            <h3 class="font-serif text-2xl font-bold text-[#232124] mb-3">Double Room</h3>
+                            <p class="text-[#464348] mb-8 flex-grow leading-relaxed">A cozy, quiet private room with one large double bed and private attached bathroom. Perfect for couples or solo travelers wanting extra comfort.</p>
+                            <ul class="space-y-4 mb-8">
+                                <li class="flex items-center gap-4 text-[15px] font-medium text-[#464348]">
+                                    <div class="bg-orange-50 p-2 rounded text-orange-600"><i data-lucide="bed-double" class="w-5 h-5"></i></div>
+                                    One double bed
+                                </li>
+                                <li class="flex items-center gap-4 text-[15px] font-medium text-[#464348]">
+                                    <div class="bg-orange-50 p-2 rounded text-orange-600"><i data-lucide="circle-dollar-sign" class="w-5 h-5"></i></div>
+                                    $40 /room
+                                </li>
+                                <li class="flex items-center gap-4 text-[15px] font-medium text-[#464348]">
+                                    <div class="bg-orange-50 p-2 rounded text-orange-600"><i data-lucide="users" class="w-5 h-5"></i></div>
+                                    2 people
+                                </li>
+                            </ul>
+                            <button class="w-full bg-orange-600 hover:bg-orange-500 text-white py-3.5 rounded-lg font-bold transition-colors shadow-lg shadow-orange-600/20">Book Double Room</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#464348] text-[#aca8aa] py-12 border-t border-[#232124]/20 overflow-hidden">
+        <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
+                <!-- Branding & Socials -->
+                <div class="md:col-span-2 lg:col-span-4">
+                    <a href="https://snowleopardhostel.com/" class="flex items-center gap-4 mb-8 cursor-pointer hover:opacity-90 transition-opacity">
+                        <img src="logo.jpg" alt="Snow Leopard Hostel Logo" class="h-16 w-16 rounded-full object-cover border-2 border-orange-500/60 shadow-md" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'150\' height=\'150\'><rect width=\'150\' height=\'150\' fill=\'%23ea580c\'/></svg>'" />
+                        <span class="font-serif font-bold text-xl md:text-2xl text-white">
+                            Snow Leopard <span class="font-sans text-orange-500 text-lg md:text-xl block md:inline">Hostel & Trips</span>
+                        </span>
+                    </a>
+                    
+                    <div class="grid grid-cols-2 gap-y-4 gap-x-2 sm:gap-x-6">
+                        <a href="https://www.instagram.com/snow.leopard.hostel/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 text-[#aca8aa] hover:text-white transition-colors group w-fit">
+                            <div class="bg-[#232124]/40 p-2.5 rounded-full border border-[#aca8aa]/10 group-hover:border-orange-500 group-hover:bg-[#232124] transition-all">
+                                <i data-lucide="instagram" class="w-5 h-5 text-orange-500"></i>
+                            </div>
+                            <span class="font-medium text-sm">Instagram</span>
+                        </a>
+                        <a href="https://www.tripadvisor.co.nz/Hotel_Review-g815340-d19253564-Reviews-Snow_Leopard_Hostel-Karakol_Issyk_Kul_Province.html" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 text-[#aca8aa] hover:text-white transition-colors group w-fit">
+                            <div class="bg-[#232124]/40 p-2.5 rounded-full border border-[#aca8aa]/10 group-hover:border-orange-500 group-hover:bg-[#232124] transition-all">
+                                <!-- TripAdvisor Owl Logo SVG -->
+                                <svg class="w-5 h-5 text-orange-500 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 0a12 12 0 1 0 12 12A12.013 12.013 0 0 0 12 0zm0 2.182a9.818 9.818 0 1 1-9.818 9.818A9.829 9.829 0 0 1 12 2.182zm-4.336 4.91A4.336 4.336 0 1 0 12 11.428a4.336 4.336 0 0 0-4.336-4.336zm8.672 0A4.336 4.336 0 1 0 20.672 11.428a4.336 4.336 0 0 0-4.336-4.336zM7.664 13.61a2.182 2.182 0 1 1 2.182-2.182 2.184 2.184 0 0 1-2.182 2.182zm8.672 0a2.182 2.182 0 1 1 2.182-2.182 2.184 2.184 0 0 1-2.182 2.182zM12 11.428a1.09 1.09 0 0 0-1.09-1.09h2.18A1.09 1.09 0 0 0 12 11.428z"/>
+                                </svg>
+                            </div>
+                            <span class="font-medium text-sm">TripAdvisor</span>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100054640380723" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 text-[#aca8aa] hover:text-white transition-colors group w-fit">
+                            <div class="bg-[#232124]/40 p-2.5 rounded-full border border-[#aca8aa]/10 group-hover:border-orange-500 group-hover:bg-[#232124] transition-all">
+                                <i data-lucide="facebook" class="w-5 h-5 text-orange-500"></i>
+                            </div>
+                            <span class="font-medium text-sm">Facebook</span>
+                        </a>
+                        <a href="https://wa.me/996704250581" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 text-[#aca8aa] hover:text-white transition-colors group w-fit">
+                            <div class="bg-[#232124]/40 p-2.5 rounded-full border border-[#aca8aa]/10 group-hover:border-orange-500 group-hover:bg-[#232124] transition-all">
+                                <!-- WhatsApp Logo SVG -->
+                                <svg class="w-5 h-5 text-orange-500 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+                                </svg>
+                            </div>
+                            <span class="font-medium text-sm">WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Links Group -->
+                <div class="md:col-span-1 lg:col-span-5 lg:ml-16 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <!-- Quick Links -->
+                    <div>
+                        <h4 class="font-serif text-white font-bold text-lg mb-4 lg:mb-8 lg:h-16 flex items-center">Quick Links</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="https://snowleopardhostel.com/about/our-hostel/" class="hover:text-orange-400 transition-colors">Our Hostel</a></li>
+                            <li><a href="https://snowleopardhostel.com/our-rooms/" class="text-orange-400 transition-colors">Our Rooms</a></li>
+                            <li><a href="https://snowleopardhostel.com/car-rental/" class="hover:text-orange-400 transition-colors">Car Rental</a></li>
+                            <li><a href="https://snowleopardhostel.com/faqs/" class="hover:text-orange-400 transition-colors">FAQ's</a></li>
+                            <li><a href="https://snowleopardhostel.com/contact/" class="hover:text-orange-400 transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Tours & Transfers Links -->
+                    <div class="lg:-translate-x-6">
+                        <h4 class="font-serif text-white font-bold text-lg mb-4 lg:mb-8 lg:h-16 flex items-center">Tours & Transfers</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="https://snowleopardhostel.com/tours-and-transfers/karakol-almaty-transfer/" class="hover:text-orange-400 transition-colors">Almaty-Karakol Transfer</a></li>
+                            <li><a href="https://snowleopardhostel.com/tours-and-transfers/horse-riding-tours/" class="hover:text-orange-400 transition-colors">Horse Riding Tours</a></li>
+                            <li><a href="https://snowleopardhostel.com/tours-and-transfers/jeep-tours/" class="hover:text-orange-400 transition-colors">Jeep Tours</a></li>
+                            <li><a href="https://snowleopardhostel.com/tours-and-transfers/hiking-tours/" class="hover:text-orange-400 transition-colors">Hiking Tours</a></li>
+                            <li><a href="https://snowleopardhostel.com/tours-and-transfers/bishkek-airport-transfer/" class="hover:text-orange-400 hover:text-orange-300 transition-colors">Bishkek Airport Transfer</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Contact & Location Group -->
+                <div class="md:col-span-1 lg:col-span-3 flex flex-col gap-8">
+                    <!-- Contact Info -->
+                    <div>
+                        <h4 class="font-serif text-white font-bold text-lg mb-4 lg:mb-8 lg:h-16 flex items-center">Contact Info</h4>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-orange-500 flex-shrink-0"></i>
+                                <span class="text-[#aca8aa]">FCQ6+8C6 182 Karasaeva,<br />Karakol, Kyrgyzstan</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="phone" class="w-5 h-5 text-orange-500 flex-shrink-0"></i>
+                                <span class="text-[#aca8aa]">+996551932681</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="clock" class="w-5 h-5 text-orange-500 flex-shrink-0"></i>
+                                <span class="text-[#aca8aa]">24 Hour Check-in</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-8 border-t border-[#aca8aa]/20 flex flex-col items-start md:items-center gap-8">
+                <!-- Partnership & Badges -->
+                <div class="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-16 w-full justify-start md:justify-center flex-wrap">
+                    
+                    <!-- Partnership Banner -->
+                    <div class="flex flex-col items-start md:items-center gap-2 opacity-90 hover:opacity-100 transition-opacity text-left md:text-center">
+                        <span class="text-xs text-[#aca8aa] tracking-widest uppercase font-medium">In partnership with</span>
+                        <a href="https://greatgoatexpeditions.com/" target="_blank" rel="noopener noreferrer" class="block mt-1">
+                            <img src="great-goat-logo.png" alt="Great Goat Expeditions Logo" class="h-14 md:h-16 w-auto object-contain hover:scale-105 transition-transform duration-300" />
+                        </a>
+                    </div>
+
+                    <!-- Desktop Divider -->
+                    <div class="hidden md:block w-px h-12 bg-[#aca8aa]/20"></div>
+
+                    <!-- Review Badges -->
+                    <div class="flex flex-col items-start md:items-center gap-2 opacity-90 hover:opacity-100 transition-opacity text-left md:text-center">
+                        <span class="text-xs text-[#aca8aa] tracking-widest uppercase font-medium">Top Rated On</span>
+                        <div class="flex items-center justify-start md:justify-center gap-3 mt-1 h-10 md:h-12 flex-wrap">
+                            <!-- Booking.com -->
+                            <a href="https://www.booking.com/hotel/kg/snow-leopard-karakol123456.html" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-[#003580] text-white px-2 py-1.5 rounded hover:bg-[#00224f] transition-colors shadow-sm h-full">
+                                <span class="bg-blue-600 text-white font-bold text-sm px-1.5 py-0.5 rounded-sm">9.4</span>
+                                <span class="text-xs font-bold pr-1 tracking-wide">Booking.com</span>
+                            </a>
+                            <!-- Hostelworld -->
+                            <a href="https://www.hostelworld.com/hostels/p/299894/snow-leopard-hostel/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-[#ff7b54] text-white px-2 py-1.5 rounded hover:bg-[#e66a46] transition-colors shadow-sm h-full">
+                                <span class="bg-white text-[#ff7b54] font-bold text-sm px-1.5 py-0.5 rounded-sm">10.0</span>
+                                <span class="text-xs font-bold pr-1 tracking-wide">Hostelworld</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Copyright -->
+                <div class="text-sm text-left md:text-center text-[#aca8aa] opacity-80 w-full mt-4 md:mt-0">
+                    &copy; Snow Leopard Hostel. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal Container -->
+    <div id="lightbox" class="fixed inset-0 z-[100] hidden bg-black/95 backdrop-blur-sm flex items-center justify-center transition-opacity duration-300 opacity-0">
+        <!-- Close Button -->
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white/70 hover:text-orange-500 transition-colors focus:outline-none z-50 bg-black/20 hover:bg-black/50 p-2 rounded-full">
+            <i data-lucide="x" class="w-8 h-8"></i>
+        </button>
+        
+        <!-- Previous Button -->
+        <button onclick="changeImage(-1); event.stopPropagation();" class="absolute left-2 md:left-8 text-white/70 hover:text-orange-500 transition-colors focus:outline-none z-50 bg-black/20 hover:bg-black/50 p-3 rounded-full">
+            <i data-lucide="chevron-left" class="w-8 h-8 md:w-10 md:h-10"></i>
+        </button>
+
+        <!-- Main Image Display -->
+        <div class="relative w-full max-w-5xl mx-auto px-16 md:px-24 h-[75vh] flex flex-col items-center justify-center" onclick="event.stopPropagation();">
+            <img id="lightbox-img" src="" alt="Room Gallery Image" class="max-h-full max-w-full object-contain rounded shadow-2xl transition-opacity duration-300" />
+            
+            <!-- Counter -->
+            <div class="absolute bottom-[-50px] left-1/2 -translate-x-1/2 text-white text-sm font-medium tracking-widest bg-black/50 px-5 py-2 rounded-full border border-white/10">
+                <span id="lightbox-counter">1 / 5</span>
+            </div>
+        </div>
+
+        <!-- Next Button -->
+        <button onclick="changeImage(1); event.stopPropagation();" class="absolute right-2 md:right-8 text-white/70 hover:text-orange-500 transition-colors focus:outline-none z-50 bg-black/20 hover:bg-black/50 p-3 rounded-full">
+            <i data-lucide="chevron-right" class="w-8 h-8 md:w-10 md:h-10"></i>
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            menuIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+
+        // Mobile About Dropdown Logic
+        const mobileAboutBtn = document.getElementById('mobile-about-btn');
+        const mobileAboutMenu = document.getElementById('mobile-about-menu');
+        const mobileAboutIcon = document.getElementById('mobile-about-icon');
+        
+        if(mobileAboutBtn && mobileAboutMenu && mobileAboutIcon) {
+            mobileAboutBtn.addEventListener('click', () => {
+                mobileAboutMenu.classList.toggle('hidden');
+                mobileAboutMenu.classList.toggle('flex');
+                mobileAboutIcon.classList.toggle('rotate-180');
+            });
+        }
+
+        // Mobile Tours Dropdown Logic
+        const mobileToursBtn = document.getElementById('mobile-tours-btn');
+        const mobileToursMenu = document.getElementById('mobile-tours-menu');
+        const mobileToursIcon = document.getElementById('mobile-tours-icon');
+        
+        if(mobileToursBtn && mobileToursMenu && mobileToursIcon) {
+            mobileToursBtn.addEventListener('click', () => {
+                mobileToursMenu.classList.toggle('hidden');
+                mobileToursMenu.classList.toggle('flex');
+                mobileToursIcon.classList.toggle('rotate-180');
+            });
+        }
+
+        // --- Lightbox Gallery Logic ---
+        
+        // Define the image sets for each room type
+        const galleries = {
+            dorm: [
+                'dorm-room.jpg',
+                'dorm-2.jpg',
+                'dorm-3.jpg',
+                'dorm-4.jpg',
+                'dorm-5.jpg'
+            ],
+            twin: [
+                'twin-room.jpg',
+                'twin-2.jpg',
+                'twin-3.jpg',
+                'twin-4.jpg',
+                'twin-5.jpg'
+            ],
+            double: [
+                'double-room.jpg',
+                'double-2.jpg',
+                'double-3.jpg',
+                'double-4.jpg',
+                'double-5.jpg'
+            ]
+        };
+
+        let currentGallery = [];
+        let currentIndex = 0;
+        
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCounter = document.getElementById('lightbox-counter');
+
+        function openLightbox(galleryId) {
+            currentGallery = galleries[galleryId];
+            currentIndex = 0;
+            updateLightboxContent();
+            
+            lightbox.classList.remove('hidden');
+            // Trigger reflow to ensure the transition works
+            void lightbox.offsetWidth; 
+            lightbox.classList.remove('opacity-0');
+            lightbox.classList.add('opacity-100');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling in background
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('opacity-100');
+            lightbox.classList.add('opacity-0');
+            // Wait for transition to finish before hiding
+            setTimeout(() => {
+                lightbox.classList.add('hidden');
+                document.body.style.overflow = ''; // Restore scrolling
+            }, 300);
+        }
+
+        function changeImage(direction) {
+            currentIndex += direction;
+            
+            // Loop back around if at ends
+            if (currentIndex >= currentGallery.length) currentIndex = 0;
+            if (currentIndex < 0) currentIndex = currentGallery.length - 1;
+            
+            // Quick fade out/in effect for image change
+            lightboxImg.style.opacity = '0';
+            setTimeout(() => {
+                updateLightboxContent();
+                lightboxImg.style.opacity = '1';
+            }, 200);
+        }
+
+        function updateLightboxContent() {
+            // Setup a fallback SVG just in case the real images aren't uploaded yet
+            lightboxImg.onerror = function() {
+                const roomType = currentGallery[0].split('-')[0].toUpperCase();
+                this.src = `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1000' height='700'><rect width='1000' height='700' fill='%23232124'/><text x='50%' y='50%' font-family='sans-serif' font-size='40' fill='white' text-anchor='middle' dominant-baseline='middle'>${roomType} ROOM - IMAGE ${currentIndex + 1}</text></svg>`;
+            };
+            
+            lightboxImg.src = currentGallery[currentIndex];
+            lightboxCounter.textContent = `${currentIndex + 1} / ${currentGallery.length}`;
+        }
+
+        // Close lightbox when clicking the dark background outside the image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+
+        // Keyboard navigation support
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('hidden')) {
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowRight') changeImage(1);
+                if (e.key === 'ArrowLeft') changeImage(-1);
+            }
+        });
+    </script>
+</body>
+</html>
