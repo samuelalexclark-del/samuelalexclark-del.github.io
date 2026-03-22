@@ -154,12 +154,12 @@
         <header class="relative h-[80vh] flex items-center justify-center">
             <div class="absolute inset-0 w-full h-full">
                 <img 
-                    src="home-hero-2.jpg" 
+                    src="home-hero.jpg" 
                     alt="People riding horses in the mountains of Kyrgyzstan" 
                     class="w-full h-full object-cover object-center"
                 />
                 <!-- Light grey overlay to wash out the image and make dark text pop -->
-                <div class="absolute inset-0 bg-[#aca8aa]/40"></div>
+                <div class="absolute inset-0 bg-[#aca8aa]/10"></div>
             </div>
             
             <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
@@ -203,17 +203,17 @@
                 <div id="toursCarousel" class="flex overflow-x-auto gap-6 pb-8 pt-4 no-scrollbar touch-pan-x cursor-grab active:cursor-grabbing">
                     
                     <!-- Trip 1: Almaty-Karakol Transfer -->
-                    <div class="shrink-0 w-[85vw] sm:w-[45vw] lg:w-[30vw] flex flex-col group relative drop-shadow-lg hover:drop-shadow-xl transition-all duration-300">
-                        <!-- Mountain-shaped image wrapper - Shallow Cut -->
-                        <div class="relative h-64 [clip-path:polygon(0_15%,_30%_5%,_40%_10%,_60%_0%,_75%_6%,_100%_12%,_100%_100%,_0_100%)] overflow-hidden z-10">
+                    <div class="shrink-0 w-[85vw] sm:w-[45vw] lg:w-[30vw] flex flex-col group relative shadow-md hover:shadow-xl transition-all duration-300 bg-white rounded-2xl border border-[#464348]/10 hover:border-orange-600/40">
+                        <!-- Image wrapper -->
+                        <div class="relative h-64 overflow-hidden rounded-t-2xl z-10">
                             <img src="karakol-almaty-transfer.jpg" alt="Camping spot on a Karakol to Almaty Transfer" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                         </div>
-                        <!-- Icon floating in the 'sky' (negative space) -->
-                        <div class="absolute top-10 right-6 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md border border-[#464348]/10 text-orange-600 z-20 group-hover:-translate-y-1 transition-transform duration-300">
+                        <!-- Icon floating in the corner -->
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md border border-[#464348]/10 text-orange-600 z-20 group-hover:-translate-y-1 transition-transform duration-300">
                             <i data-lucide="van" class="w-5 h-5"></i>
                         </div>
-                        <!-- White text card tucked under the clipped image -->
-                        <div class="bg-white p-6 flex flex-col flex-grow pt-5 -mt-1 rounded-b-2xl border-x border-b border-[#464348]/10 group-hover:border-orange-600/40 transition-colors relative z-0">
+                        <!-- White text card -->
+                        <div class="p-6 flex flex-col flex-grow relative z-0">
                             <h3 class="font-serif text-xl font-bold text-[#232124] mb-2">Almaty-Karakol Transfer</h3>
                             <div class="flex items-center text-[#464348] text-sm mb-4 font-medium">
                                 <i data-lucide="clock" class="w-4 h-4 mr-1.5 text-orange-600"></i>
@@ -234,17 +234,17 @@
                     </div>
 
                     <!-- Trip 2: Horse Riding Tours -->
-                    <div class="shrink-0 w-[85vw] sm:w-[45vw] lg:w-[30vw] flex flex-col group relative drop-shadow-lg hover:drop-shadow-xl transition-all duration-300">
-                        <!-- Mountain-shaped image wrapper - Shallow Cut -->
-                        <div class="relative h-64 [clip-path:polygon(0_15%,_30%_5%,_40%_10%,_60%_0%,_75%_6%,_100%_12%,_100%_100%,_0_100%)] overflow-hidden z-10">
+                    <div class="shrink-0 w-[85vw] sm:w-[45vw] lg:w-[30vw] flex flex-col group relative shadow-md hover:shadow-xl transition-all duration-300 bg-white rounded-2xl border border-[#464348]/10 hover:border-orange-600/40">
+                        <!-- Image wrapper -->
+                        <div class="relative h-64 overflow-hidden rounded-t-2xl z-10">
                             <img src="horse-riding-tours.jpg" alt="Horse Riding Tours" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.src='https://images.unsplash.com/photo-1553531580-6520e7225121?auto=format&fit=crop&q=80&w=800'" />
                         </div>
-                        <!-- Icon floating in the 'sky' (negative space) -->
-                        <div class="absolute top-10 right-6 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md border border-[#464348]/10 text-orange-600 z-20 group-hover:-translate-y-1 transition-transform duration-300">
+                        <!-- Icon floating in the corner -->
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md border border-[#464348]/10 text-orange-600 z-20 group-hover:-translate-y-1 transition-transform duration-300">
                             <i data-lucide="mountain" class="w-5 h-5"></i>
                         </div>
-                        <!-- White text card tucked under the clipped image -->
-                        <div class="bg-white p-6 flex flex-col flex-grow pt-5 -mt-1 rounded-b-2xl border-x border-b border-[#464348]/10 group-hover:border-orange-600/40 transition-colors relative z-0">
+                        <!-- White text card -->
+                        <div class="p-6 flex flex-col flex-grow relative z-0">
                             <h3 class="font-serif text-xl font-bold text-[#232124] mb-2">Horse Riding Tours</h3>
                             <div class="flex items-center text-[#464348] text-sm mb-4 font-medium">
                                 <i data-lucide="clock" class="w-4 h-4 mr-1.5 text-orange-600"></i>
@@ -265,17 +265,17 @@
                     </div>
 
                     <!-- Trip 3: Jeep Tours -->
-                    <div class="shrink-0 w-[85vw] sm:w-[45vw] lg:w-[30vw] flex flex-col group relative drop-shadow-lg hover:drop-shadow-xl transition-all duration-300">
-                        <!-- Mountain-shaped image wrapper - Shallow Cut -->
-                        <div class="relative h-64 [clip-path:polygon(0_15%,_30%_5%,_40%_10%,_60%_0%,_75%_6%,_100%_12%,_100%_100%,_0_100%)] overflow-hidden z-10">
+                    <div class="shrink-0 w-[85vw] sm:w-[45vw] lg:w-[30vw] flex flex-col group relative shadow-md hover:shadow-xl transition-all duration-300 bg-white rounded-2xl border border-[#464348]/10 hover:border-orange-600/40">
+                        <!-- Image wrapper -->
+                        <div class="relative h-64 overflow-hidden rounded-t-2xl z-10">
                             <img src="jeep-tours.jpg" alt="Jeep Tours" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                         </div>
-                        <!-- Icon floating in the 'sky' (negative space) -->
-                        <div class="absolute top-10 right-6 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md border border-[#464348]/10 text-orange-600 z-20 group-hover:-translate-y-1 transition-transform duration-300">
+                        <!-- Icon floating in the corner -->
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md border border-[#464348]/10 text-orange-600 z-20 group-hover:-translate-y-1 transition-transform duration-300">
                             <i data-lucide="van" class="w-5 h-5"></i>
                         </div>
-                        <!-- White text card tucked under the clipped image -->
-                        <div class="bg-white p-6 flex flex-col flex-grow pt-5 -mt-1 rounded-b-2xl border-x border-b border-[#464348]/10 group-hover:border-orange-600/40 transition-colors relative z-0">
+                        <!-- White text card -->
+                        <div class="p-6 flex flex-col flex-grow relative z-0">
                             <h3 class="font-serif text-xl font-bold text-[#232124] mb-2">Jeep Tours</h3>
                             <div class="flex items-center text-[#464348] text-sm mb-4 font-medium">
                                 <i data-lucide="clock" class="w-4 h-4 mr-1.5 text-orange-600"></i>
@@ -296,17 +296,17 @@
                     </div>
 
                     <!-- Trip 4: Hiking Tours -->
-                    <div class="shrink-0 w-[85vw] sm:w-[45vw] lg:w-[30vw] flex flex-col group relative drop-shadow-lg hover:drop-shadow-xl transition-all duration-300">
-                        <!-- Mountain-shaped image wrapper - Shallow Cut -->
-                        <div class="relative h-64 [clip-path:polygon(0_15%,_30%_5%,_40%_10%,_60%_0%,_75%_6%,_100%_12%,_100%_100%,_0_100%)] overflow-hidden z-10">
+                    <div class="shrink-0 w-[85vw] sm:w-[45vw] lg:w-[30vw] flex flex-col group relative shadow-md hover:shadow-xl transition-all duration-300 bg-white rounded-2xl border border-[#464348]/10 hover:border-orange-600/40">
+                        <!-- Image wrapper -->
+                        <div class="relative h-64 overflow-hidden rounded-t-2xl z-10">
                             <img src="hiking-tours.jpg" alt="Ala-Kul Lake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                         </div>
-                        <!-- Icon floating in the 'sky' (negative space) -->
-                        <div class="absolute top-10 right-6 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md border border-[#464348]/10 text-orange-600 z-20 group-hover:-translate-y-1 transition-transform duration-300">
+                        <!-- Icon floating in the corner -->
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md border border-[#464348]/10 text-orange-600 z-20 group-hover:-translate-y-1 transition-transform duration-300">
                             <i data-lucide="footprints" class="w-5 h-5"></i>
                         </div>
-                        <!-- White text card tucked under the clipped image -->
-                        <div class="bg-white p-6 flex flex-col flex-grow pt-5 -mt-1 rounded-b-2xl border-x border-b border-[#464348]/10 group-hover:border-orange-600/40 transition-colors relative z-0">
+                        <!-- White text card -->
+                        <div class="p-6 flex flex-col flex-grow relative z-0">
                             <h3 class="font-serif text-xl font-bold text-[#232124] mb-2">Hiking Tours</h3>
                             <div class="flex items-center text-[#464348] text-sm mb-4 font-medium">
                                 <i data-lucide="clock" class="w-4 h-4 mr-1.5 text-orange-600"></i>
@@ -327,17 +327,17 @@
                     </div>
 
                     <!-- Trip 5: Bishkek Airport Transfer -->
-                    <div class="shrink-0 w-[85vw] sm:w-[45vw] lg:w-[30vw] flex flex-col group relative drop-shadow-lg hover:drop-shadow-xl transition-all duration-300">
-                        <!-- Mountain-shaped image wrapper - Shallow Cut -->
-                        <div class="relative h-64 [clip-path:polygon(0_15%,_30%_5%,_40%_10%,_60%_0%,_75%_6%,_100%_12%,_100%_100%,_0_100%)] overflow-hidden z-10">
-                            <img src="hiking-tours.jpg" alt="Ala-Kul Lake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                    <div class="shrink-0 w-[85vw] sm:w-[45vw] lg:w-[30vw] flex flex-col group relative shadow-md hover:shadow-xl transition-all duration-300 bg-white rounded-2xl border border-[#464348]/10 hover:border-orange-600/40">
+                        <!-- Image wrapper -->
+                        <div class="relative h-64 overflow-hidden rounded-t-2xl z-10">
+                            <img src="bishkek-airport-transfer.jpg" alt="Ala-Kul Lake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                         </div>
-                        <!-- Icon floating in the 'sky' (negative space) -->
-                        <div class="absolute top-10 right-6 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md border border-[#464348]/10 text-orange-600 z-20 group-hover:-translate-y-1 transition-transform duration-300">
+                        <!-- Icon floating in the corner -->
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-md border border-[#464348]/10 text-orange-600 z-20 group-hover:-translate-y-1 transition-transform duration-300">
                             <i data-lucide="van" class="w-5 h-5"></i>
                         </div>
-                        <!-- White text card tucked under the clipped image -->
-                        <div class="bg-white p-6 flex flex-col flex-grow pt-5 -mt-1 rounded-b-2xl border-x border-b border-[#464348]/10 group-hover:border-orange-600/40 transition-colors relative z-0">
+                        <!-- White text card -->
+                        <div class="p-6 flex flex-col flex-grow relative z-0">
                             <h3 class="font-serif text-xl font-bold text-[#232124] mb-2">Bishkek Airport Transfer</h3>
                             <div class="flex items-center text-[#464348] text-sm mb-4 font-medium">
                                 <i data-lucide="clock" class="w-4 h-4 mr-1.5 text-orange-600"></i>
@@ -533,7 +533,7 @@
                         <div class="shrink-0 w-[85vw] sm:w-[350px] bg-[#aca8aa]/5 p-6 rounded-2xl border border-[#464348]/10 shadow-sm hover:shadow-md flex flex-col transition-all duration-300">
                             <div class="flex justify-between items-start mb-4">
                                 <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 font-bold text-lg">J</div>
+                                    <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 font-bold text-lg">M</div>
                                     <div>
                                         <h4 class="font-bold text-[#232124] text-sm">Justin D</h4>
                                         <p class="text-xs text-[#aca8aa]">June, 2024</p>
@@ -653,7 +653,7 @@
                             <li><a href="https://snowleopardhostel.com/tours-and-transfers/horse-riding-tours/" class="hover:text-orange-400 transition-colors">Horse Riding Tours</a></li>
                             <li><a href="https://snowleopardhostel.com/tours-and-transfers/jeep-tours/" class="hover:text-orange-400 transition-colors">Jeep Tours</a></li>
                             <li><a href="https://snowleopardhostel.com/tours-and-transfers/hiking-tours/" class="hover:text-orange-400 transition-colors">Hiking Tours</a></li>
-                            <li><a href="https://snowleopardhostel.com/tours-and-transfers/bishkek-airport-transfer/" class="hover:text-orange-400 hover:text-orange-300 transition-colors">Bishkek Airport Transfer</a></li>
+                            <li><a href="https://snowleopardhostel.com/tours-and-transfers/bishkek-airport-transfer/" class="text-orange-400 hover:text-orange-300 transition-colors">Bishkek Airport Transfer</a></li>
                         </ul>
                     </div>
                 </div>
