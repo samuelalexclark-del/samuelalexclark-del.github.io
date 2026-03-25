@@ -189,7 +189,8 @@
         <!-- Featured Tours Carousel Section -->
         <section id="tours" class="py-20 bg-[#aca8aa]/10 relative overflow-hidden">
             <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-end mb-12">
+                <!-- Changed to flex-col on mobile so the arrows neatly stack below the title -->
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 gap-6 sm:gap-0">
                     <div class="text-left max-w-2xl">
                         <h2 class="font-serif text-3xl md:text-4xl font-bold text-[#232124] mb-4">Our Tours & Transfers</h2>
                         <p class="text-[#464348] text-lg">
@@ -197,8 +198,8 @@
                         </p>
                     </div>
                     
-                    <!-- Carousel Navigation Buttons (Hidden on very small screens) -->
-                    <div class="hidden sm:flex gap-3">
+                    <!-- Carousel Navigation Buttons (Now visible on all screens) -->
+                    <div class="flex gap-3 shrink-0">
                         <button id="prevBtn" class="bg-white border border-[#464348]/20 text-orange-600 p-3 rounded-full hover:bg-orange-600 hover:text-white transition-colors shadow-sm focus:outline-none">
                             <i data-lucide="chevron-left" class="w-6 h-6"></i>
                         </button>
@@ -775,30 +776,32 @@
         }
 
         // Carousel Scroll & Auto-Loop Logic
-        function initAutoScrollCarousel(carouselId, intervalMs = 20) {
+        function initCarousel(carouselId, intervalMs = 20, enableAutoScroll = true) {
             const carousel = document.getElementById(carouselId);
             if (!carousel) return null;
 
-            // Clone the carousel items to create an infinite loop effect
-            const originalItems = Array.from(carousel.children);
-            originalItems.forEach(item => {
-                const clone = item.cloneNode(true);
-                carousel.appendChild(clone);
-            });
-
             let isHovered = false;
 
-            // Auto-scroll continuous loop function
-            setInterval(() => {
-                if (!isHovered) {
-                    carousel.scrollLeft += 1; 
+            if (enableAutoScroll) {
+                // Clone the carousel items to create an infinite loop effect
+                const originalItems = Array.from(carousel.children);
+                originalItems.forEach(item => {
+                    const clone = item.cloneNode(true);
+                    carousel.appendChild(clone);
+                });
 
-                    // When we scroll exactly past the first set of items (halfway point of the new cloned container), reset to 0 seamlessly
-                    if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
-                        carousel.scrollLeft -= carousel.scrollWidth / 2;
+                // Auto-scroll continuous loop function
+                setInterval(() => {
+                    if (!isHovered) {
+                        carousel.scrollLeft += 1; 
+
+                        // When we scroll exactly past the first set of items (halfway point of the new cloned container), reset to 0 seamlessly
+                        if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
+                            carousel.scrollLeft -= carousel.scrollWidth / 2;
+                        }
                     }
-                }
-            }, intervalMs);
+                }, intervalMs);
+            }
 
             // Pause auto-scroll on interactions
             carousel.addEventListener('mouseenter', () => isHovered = true);
@@ -810,20 +813,22 @@
 
             return { 
                 carousel, 
-                setHovered: (val) => isHovered = val 
+                setHovered: (val) => isHovered = val,
+                isLooped: enableAutoScroll
             };
         }
 
-        // Initialize Carousels
-        const toursState = initAutoScrollCarousel('toursCarousel', 12); // Increased speed
-        initAutoScrollCarousel('reviewsCarousel', 30); // Slightly slower for easier reading
+        // Initialize Carousels conditionally based on device width
+        const isMobileDevice = window.innerWidth < 768; // 768px is tailwind's 'md' breakpoint
+        const toursState = initCarousel('toursCarousel', 12, !isMobileDevice); // Disable auto-scroll on mobile
+        initCarousel('reviewsCarousel', 30, true); // Keep reviews auto-scrolling everywhere
 
         // Manual button controls for Tours
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
 
         if(toursState && prevBtn && nextBtn) {
-            const { carousel, setHovered } = toursState;
+            const { carousel, setHovered, isLooped } = toursState;
             
             const getScrollAmount = () => {
                 const card = carousel.querySelector('div');
@@ -835,8 +840,8 @@
             });
 
             prevBtn.addEventListener('click', () => {
-                // Prevent jumping issue when manually clicking "prev" at the very beginning
-                if (carousel.scrollLeft <= 0) {
+                // Prevent jumping issue when manually clicking "prev" at the very beginning (only if looped)
+                if (isLooped && carousel.scrollLeft <= 0) {
                     carousel.scrollLeft = carousel.scrollWidth / 2;
                 }
                 carousel.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
