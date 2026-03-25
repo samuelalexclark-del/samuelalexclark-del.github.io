@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Snow Leopard Hostel & Trips</title>
-    <meta name="description" content="Get in touch with Snow Leopard Hostel & Trips in Karakol, Kyrgyzstan. Book your room or adventure tour today.">
+    <title>Contact Us | Snow Leopard Hostel </title>
+    <meta name="description" content="Get in touch today. Contact us about rooms, car rental, and adventure tours in Karakol. We’re here to help plan your trip.">
     <link rel="canonical" href="https://snowleopardhostel.com/contact/" />
     <link rel="icon" href="/favicon-image.jpg">
     <link rel="apple-touch-icon" href="/favicon-image.jpg">
@@ -152,6 +152,7 @@
                     src="contact-hero.jpg" 
                     alt="A girl standing in front of Seven Bulls, Kyrgyzstan" 
                     class="w-full h-full object-cover object-center"
+                    onerror="this.src='https://images.unsplash.com/photo-1549488344-c6a6552f9540?auto=format&fit=crop&q=80'"
                 />
                 <!-- Light grey overlay to wash out the image and make dark text pop -->
                 <div class="absolute inset-0 bg-[#aca8aa]/40"></div>
@@ -180,7 +181,7 @@
                                 Need more info on one of our trips, car rentals or room availability? Reach out to us via the contact form below and we'll get back to you as soon as possible.
                             </p>
                             
-                            <form action="#" method="POST" class="space-y-6 relative z-10">
+                            <form action="https://formspree.io/f/meepjzda" method="POST" class="space-y-6 relative z-10">
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <!-- Name -->
                                     <div>
@@ -198,22 +199,32 @@
                                     </div>
                                 </div>
                                 
-                                <!-- Inquiry Type -->
-                                <div>
-                                    <label for="subject" class="block text-sm font-bold text-[#232124] mb-2">What are you inquiring about?</label>
-                                    <div class="relative">
-                                        <select id="subject" name="subject" 
-                                            class="w-full px-4 py-3 rounded-lg border border-[#464348]/20 bg-[#aca8aa]/5 text-[#464348] appearance-none focus:outline-none focus:ring-2 focus:ring-orange-600/50 focus:border-orange-600 transition-colors cursor-pointer">
-                                            <option value="general">General Inquiry</option>
-                                            <option value="room">Hotel & Hostel Rooms</option>
-                                            <option value="almaty-karakol-transfer">Almaty-Karakol Transfer</option>
-                                            <option value="horse-riding-tours">Horse Riding Tours</option>
-                                            <option value="jeep-tours">Jeep Tours</option>
-                                            <option value="car-rental">Car Rental</option>
-                                            <option value="hiking-tours">Hiking Tours</option>
-                                        </select>
-                                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[#464348]">
-                                            <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <!-- WhatsApp Number -->
+                                    <div>
+                                        <label for="whatsapp" class="block text-sm font-bold text-[#232124] mb-2">WhatsApp Number (inc. country code) *</label>
+                                        <input type="tel" id="whatsapp" name="whatsapp" required 
+                                            class="w-full px-4 py-3 rounded-lg border border-[#464348]/20 bg-[#aca8aa]/5 text-[#464348] focus:outline-none focus:ring-2 focus:ring-orange-600/50 focus:border-orange-600 transition-colors placeholder-[#aca8aa]"
+                                            placeholder="+996 551 932 681">
+                                    </div>
+
+                                    <!-- Inquiry Type -->
+                                    <div>
+                                        <label for="subject" class="block text-sm font-bold text-[#232124] mb-2">What are you inquiring about?</label>
+                                        <div class="relative">
+                                            <select id="subject" name="subject" 
+                                                class="w-full px-4 py-3 rounded-lg border border-[#464348]/20 bg-[#aca8aa]/5 text-[#464348] appearance-none focus:outline-none focus:ring-2 focus:ring-orange-600/50 focus:border-orange-600 transition-colors cursor-pointer">
+                                                <option value="general">General Inquiry</option>
+                                                <option value="room">Hotel & Hostel Rooms</option>
+                                                <option value="almaty-karakol-transfer">Almaty-Karakol Transfer</option>
+                                                <option value="horse-riding-tours">Horse Riding Tours</option>
+                                                <option value="jeep-tours">Jeep Tours</option>
+                                                <option value="car-rental">Car Rental</option>
+                                                <option value="hiking-tours">Hiking Tours</option>
+                                            </select>
+                                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[#464348]">
+                                                <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -277,7 +288,7 @@
                                 <div>
                                     <h4 class="font-bold text-[#232124] text-lg mb-1">Email</h4>
                                     <a href="mailto:info@snowleopardhostel.com" class="text-[#464348] hover:text-orange-600 transition-colors">
-                                        info@snowleopardhostel.com
+                                        jalil251981@yahoo.com
                                     </a>
                                 </div>
                             </div>
