@@ -180,9 +180,7 @@
                                 <select id="vehicleSelect" onchange="toggleTentOption()" class="w-full p-3 border border-[#aca8aa]/40 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600 bg-gray-50 text-[#464348] font-medium transition-shadow">
                                     <option value="">-- Choose a Vehicle --</option>
                                     <option value="Toyota Sequoia">Toyota Sequoia ($120/day)</option>
-                                    <option value="Mitsubishi Delica">Mitsubishi Delica ($80/day)</option>
-                                    <option value="Subaru Forester">Subaru Forester ($60/day)</option>
-                                    <option value="Toyota Land Cruiser">Toyota Land Cruiser ($90/day)</option>
+                                    <option value="Subaru Forester">Subaru Forester ($70/day)</option>
                                 </select>
                             </div>
 
@@ -230,12 +228,12 @@
                     <!-- Vehicle 1: Subaru Forester -->
                     <div class="bg-white rounded-2xl overflow-hidden shadow-xl border border-[#464348]/10 flex flex-col group hover:-translate-y-2 transition-transform duration-300">
                         <div class="relative h-64 overflow-hidden">
-                            <img src="subaru.jpg" alt="Subaru Forester" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img src="subaru.jpg" alt="Subaru Forester" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/eeeeee/666666?text=Subaru+Forester'">
                         </div>
                         <div class="p-6 md:p-8 flex-grow flex flex-col">
                             <h3 class="font-serif text-2xl font-bold text-[#232124] mb-2">Subaru Forester</h3>
                             <div class="flex items-baseline gap-2 mb-6 pb-6 border-b border-[#aca8aa]/30">
-                                <span class="text-3xl font-bold text-orange-600">$60</span>
+                                <span class="text-3xl font-bold text-orange-600">$70</span>
                                 <span class="text-[#aca8aa] text-sm">/ day</span>
                             </div>
                             
@@ -254,70 +252,10 @@
                         </div>
                     </div>
 
-                    <!-- Vehicle 2: Mitsubishi Delica -->
-                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl border border-[#464348]/10 flex flex-col group hover:-translate-y-2 transition-transform duration-300">
-                        <div class="relative h-64 overflow-hidden">
-                            <img src="delica.jpg" alt="Mitsubishi Delica" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        </div>
-                        <div class="p-6 md:p-8 flex-grow flex flex-col">
-                            <h3 class="font-serif text-2xl font-bold text-[#232124] mb-2">Mitsubishi Delica</h3>
-                            <div class="flex items-baseline gap-2 mb-6 pb-6 border-b border-[#aca8aa]/30">
-                                <span class="text-3xl font-bold text-orange-600">$80</span>
-                                <span class="text-[#aca8aa] text-sm">/ day</span>
-                            </div>
-                            
-                            <ul class="space-y-3 mb-8 text-[#464348] flex-grow font-medium">
-                                <li class="flex items-center gap-3">
-                                    <i data-lucide="cog" class="w-5 h-5 text-orange-500"></i> Automatic 
-                                </li>
-                                <li class="flex items-center gap-3">
-                                    <i data-lucide="users" class="w-5 h-5 text-orange-500"></i> 7 Seats
-                                </li>
-                                <li class="flex items-center gap-3">
-                                    <i data-lucide="mountain" class="w-5 h-5 text-orange-500"></i> 4 Wheel Drive
-                                </li>
-                            </ul>
-                            
-                            <a href="#vehicleSelect" onclick="document.getElementById('vehicleSelect').value='Mitsubishi Delica'; document.getElementById('startDate').focus();" class="w-full bg-[#232124] hover:bg-orange-600 text-white text-center py-3.5 rounded-lg font-bold transition-colors flex justify-center items-center gap-2">
-                                Check Availability <i data-lucide="arrow-up" class="w-4 h-4"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Vehicle 3: Toyota Land Cruiser -->
-                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl border border-[#464348]/10 flex flex-col group hover:-translate-y-2 transition-transform duration-300">
-                        <div class="relative h-64 overflow-hidden">
-                            <img src="land-cruiser.jpg" alt="Toyota Land Cruiser" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        </div>
-                        <div class="p-6 md:p-8 flex-grow flex flex-col">
-                            <h3 class="font-serif text-2xl font-bold text-[#232124] mb-2">Toyota Land Cruiser</h3>
-                            <div class="flex items-baseline gap-2 mb-6 pb-6 border-b border-[#aca8aa]/30">
-                                <span class="text-3xl font-bold text-orange-600">$90</span>
-                                <span class="text-[#aca8aa] text-sm">/ day</span>
-                            </div>
-                            
-                            <ul class="space-y-3 mb-8 text-[#464348] flex-grow font-medium">
-                                <li class="flex items-center gap-3">
-                                    <i data-lucide="cog" class="w-5 h-5 text-orange-500"></i> Manual
-                                </li>
-                                <li class="flex items-center gap-3">
-                                    <i data-lucide="users" class="w-5 h-5 text-orange-500"></i> 4 Seats
-                                </li>
-                                <li class="flex items-center gap-3">
-                                    <i data-lucide="mountain" class="w-5 h-5 text-orange-500"></i> 4 Wheel Drive
-                                </li>
-                            </ul>
-                            
-                            <a href="#vehicleSelect" onclick="document.getElementById('vehicleSelect').value='Toyota Land Cruiser'; document.getElementById('startDate').focus();" class="w-full bg-[#232124] hover:bg-orange-600 text-white text-center py-3.5 rounded-lg font-bold transition-colors flex justify-center items-center gap-2">
-                                Check Availability <i data-lucide="arrow-up" class="w-4 h-4"></i>
-                            </a>
-                        </div>
-                    </div>
-
                     <!-- Vehicle 4: Toyota Sequoia -->
                     <div class="bg-white rounded-2xl overflow-hidden shadow-xl border border-[#464348]/10 flex flex-col group hover:-translate-y-2 transition-transform duration-300">
                         <div class="relative h-64 overflow-hidden">
-                            <img src="sequoia.jpg" alt="Toyota Sequoia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img src="sequoia.jpg" alt="Toyota Sequoia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/eeeeee/666666?text=Toyota+Sequoia'">
                         </div>
                         <div class="p-6 md:p-8 flex-grow flex flex-col">
                             <h3 class="font-serif text-2xl font-bold text-[#232124] mb-2">Toyota Sequoia</h3>
@@ -347,7 +285,7 @@
                     <!-- Vehicle 5: Toyota Sequoia With Roof Tent -->
                     <div class="bg-white rounded-2xl overflow-hidden shadow-xl border border-[#464348]/10 flex flex-col group hover:-translate-y-2 transition-transform duration-300">
                         <div class="relative h-64 overflow-hidden">
-                            <img src="" alt="Toyota Sequoia With Roof Tent" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img src="sequoia-tent.jpg" alt="Toyota Sequoia With Roof Tent" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x400/eeeeee/666666?text=Sequoia+%2B+Tent'">
                         </div>
                         <div class="p-6 md:p-8 flex-grow flex flex-col">
                             <h3 class="font-serif text-2xl font-bold text-[#232124] mb-2">Toyota Sequoia <span class="block text-lg text-orange-600 mt-1">With Roof Tent</span></h3>
@@ -368,7 +306,7 @@
                                 </li>
                             </ul>
                             
-                            <a href="#vehicleSelect" onclick="document.getElementById('vehicleSelect').value='Toyota Sequoia (With Roof Tent)'; document.getElementById('startDate').focus();" class="w-full bg-[#232124] hover:bg-orange-600 text-white text-center py-3.5 rounded-lg font-bold transition-colors flex justify-center items-center gap-2">
+                            <a href="#vehicleSelect" onclick="document.getElementById('vehicleSelect').value='Toyota Sequoia'; document.getElementById('roofTent').checked=true; document.getElementById('tentToggleDiv').classList.remove('hidden'); document.getElementById('tentToggleDiv').classList.add('flex'); document.getElementById('startDate').focus();" class="w-full bg-[#232124] hover:bg-orange-600 text-white text-center py-3.5 rounded-lg font-bold transition-colors flex justify-center items-center gap-2">
                                 Check Availability <i data-lucide="arrow-up" class="w-4 h-4"></i>
                             </a>
                         </div>
@@ -491,7 +429,7 @@
                     <div class="flex flex-col items-start md:items-center gap-2 opacity-90 hover:opacity-100 transition-opacity text-left md:text-center">
                         <span class="text-xs text-[#aca8aa] tracking-widest uppercase font-medium">In partnership with</span>
                         <a href="https://greatgoatexpeditions.com/" target="_blank" rel="noopener noreferrer" class="block mt-1">
-                            <img src="great-goat-logo.png" alt="Great Goat Expeditions Logo" class="h-14 md:h-16 w-auto object-contain hover:scale-105 transition-transform duration-300" />
+                            <img src="great-goat-logo.png" alt="Great Goat Expeditions Logo" class="h-14 md:h-16 w-auto object-contain hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/150x50/333333/ffffff?text=Great+Goat'" />
                         </a>
                     </div>
 
@@ -571,16 +509,14 @@
 
         // 2. MOCK DATA (Simulating your Google Sheet for testing)
         const mockBookings = [
-            { vehicle: "Mitsubishi Delica", start: "2026-07-15", end: "2026-07-20" },
-            { vehicle: "Toyota Land Cruiser", start: "2026-08-01", end: "2026-08-10" }
+            { vehicle: "Toyota Sequoia", start: "2026-07-15", end: "2026-07-20" },
+            { vehicle: "Subaru Forester", start: "2026-08-01", end: "2026-08-10" }
         ];
 
         // 3. PRICING LOGIC
         const vehicleRates = {
             "Toyota Sequoia": 120,
-            "Mitsubishi Delica": 80,
-            "Subaru Forester": 60,
-            "Toyota Land Cruiser": 90
+            "Subaru Forester": 70
         };
 
         // UI function to show/hide the roof tent option
